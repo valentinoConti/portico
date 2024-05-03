@@ -1,7 +1,6 @@
 {
   "name": "portico-web",
   "version": "1.0.0",
-  "private": "true",
   "source": "src/index.html",
   "scripts": {
     "build": "parcel build --no-scope-hoist --public-url ./",
