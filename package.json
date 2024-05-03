@@ -1,0 +1,29 @@
+{
+  "name": "portico-web",
+  "version": "1.0.0",
+  "description": "Sitio web de Portico.club",
+  "main": "index.js",
+  "source": "src/index.html",
+  "scripts": {
+    "build": "parcel build --no-scope-hoist --public-url ./",
+    "start": "parcel",
+    "clean": "rimraf dist && rimraf .parcel-cache"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.12.0",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "parcel": "^2.12.0",
+    "process": "^0.11.10",
+    "rimraf": "^5.0.5"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.0"
+  },
+  "alias": {
+    "src": "./src"
+  }
+}

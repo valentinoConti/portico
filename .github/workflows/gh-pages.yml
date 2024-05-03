@@ -1,0 +1,30 @@
+name: Build and deploy gh-pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_deploy_gh_page:
+    name: Build and Deploy Github Page
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repos develop branch
+        uses: actions/checkout@v3
+        with:
+          ref: "main"
+
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+
+      - name: Build and Deploy Github Page
+        run: |
+          yarn install
+          yarn build
+
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          yarn dlx push-dir --dir=dist --branch=gh-pages --cleanup --verbose
