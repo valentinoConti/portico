@@ -1,0 +1,8 @@
+{
+  "extends": "@parcel/config-default",
+  "transformers": {
+    "*.{png,jpg,jpeg,webm,mp4}": [
+      "@parcel/transformer-raw"
+    ]
+  }
+}
