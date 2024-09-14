@@ -1,0 +1,105 @@
+@import "src/globals.scss";
+
+.store {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(
+      to right,
+      var(--color-primary-100),
+      var(--color-primary-300)
+    );
+    border-bottom: 2px solid var(--color-primary-800);
+
+    img {
+      margin-right: 10px;
+    }
+
+    &-name {
+      font-family: "Chronica", sans-serif;
+      font-size: 48px;
+      letter-spacing: 5px;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+        1px 1px 0 #000;
+
+      transform: translateY(6px);
+
+      @include tablet {
+        font-size: 52px;
+        letter-spacing: 10px;
+      }
+    }
+  }
+
+  .content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    .filter-btn {
+      margin: 5px;
+      padding: 8px 16px;
+      background-color: var(--color-primary-100);
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &.active {
+        background-color: var(--color-primary-300);
+        color: white;
+      }
+    }
+  }
+
+  .items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+
+    @include desktop {
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 900px;
+    }
+
+    .item {
+      background-color: white;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+      h3 {
+        margin: 0 0 10px;
+      }
+
+      p {
+        margin: 5px 0;
+      }
+
+      @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}

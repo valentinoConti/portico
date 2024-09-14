@@ -1,15 +1,26 @@
-import React, { useState } from "react";
-import favicon from "../../favicon.png";
-import porticoVertical from "../../assets/porticoVertical.webm";
-import porticoVerticalMp4 from "../../assets/porticoVertical.mp4";
-import porticoHorizontal from "../../assets/porticoHorizontal.webm";
-import porticoHorizontalMp4 from "../../assets/porticoHorizontal.mp4";
-import "./styles.scss";
+import React, { useEffect } from "react";
+import porticoVertical from "src/assets/porticoVertical.webm";
+import porticoVerticalMp4 from "src/assets/porticoVertical.mp4";
+import porticoHorizontal from "src/assets/porticoHorizontal.webm";
+import porticoHorizontalMp4 from "src/assets/porticoHorizontal.mp4";
 import { useWindowSize } from "src/utils/useWindowSize";
+import { useNavigate } from "react-router-dom";
+import "./styles.scss";
 
 const HomePage: React.FC = () => {
+  const navigate = useNavigate();
   const { height, width } = useWindowSize();
   const isHorizontal = width > height;
+
+  useEffect(() => {
+    const goStore = setTimeout(() => {
+      navigate("/store");
+    }, 5000);
+
+    return () => {
+      clearTimeout(goStore);
+    };
+  }, []);
 
   return (
     <div className="home">
@@ -18,8 +29,10 @@ const HomePage: React.FC = () => {
           <video
             autoPlay
             muted
-            loop
             playsInline={true}
+            onEnded={() => {
+              navigate("/store");
+            }}
             key={isHorizontal ? "HH" : "VV"}
           >
             <source
@@ -30,7 +43,7 @@ const HomePage: React.FC = () => {
               src={isHorizontal ? porticoHorizontalMp4 : porticoVerticalMp4}
               type="video/mp4"
             />
-            NOT SUPPORT
+            Loading...
           </video>
         </div>
       </div>
