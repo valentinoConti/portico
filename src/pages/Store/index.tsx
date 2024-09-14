@@ -1,8 +1,8 @@
 import React, { useMemo, useState } from "react";
 import porticoImg from "src/favicon.png";
-import { PRODUCTS } from "src/assets/PARAFERNALIA";
-import "./styles.scss";
+import { PRODUCTOS } from "src/assets/PARAFERNALIA";
 import { toTitleCase } from "src/utils/string";
+import "./styles.scss";
 
 type TCategory =
   | "ADAPTADOR"
@@ -19,33 +19,24 @@ interface Item {
   name: string;
   price: number;
   category: TCategory;
-  src: any;
+  srcs: any[];
 }
-
-// const items: Item[] = [
-//   { src: "", id: "1", name: "T-Shirt", price: 19.99, category: "ADAPTADOR" },
-//   { src: "", id: "2", name: "Jeans", price: 49.99, category: "TAPA63" },
-//   { src: "", id: "3", name: "Sneakers", price: 79.99, category: "TAPA70" },
-//   { src: "", id: "4", name: "Backpack", price: 39.99, category: "TUBO" },
-//   { src: "", id: "5", name: "Watch", price: 99.99, category: "FILTRO_BONG" },
-// ];
-
-// const categories = ["All", ...new Set(items.map((item) => item.category))];
 
 const Store: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const items = useMemo(() => {
     const allItems: Item[] = [];
-    const PRODUCTS_ENTRIES = Object.entries(PRODUCTS);
+    const PRODUCTS_ENTRIES = Object.entries(PRODUCTOS);
+
     PRODUCTS_ENTRIES.forEach(([category, item]) => {
-      Object.entries(item).forEach(([name, src]) => {
+      Object.entries(item).forEach(([name, srcsArray]) => {
         allItems.push({
           id: `${category}-${name}`,
           name: toTitleCase(name),
           price: 13000,
           category: category as TCategory,
-          src,
+          srcs: srcsArray,
         });
       });
     });
@@ -90,7 +81,9 @@ const Store: React.FC = () => {
               <h3>{item.name}</h3>
               <p>${item.price.toFixed(2)}</p>
               <div className="content-items-item-img">
-                <img src={item.src} alt={item.name} />
+                {item.srcs.map((src, idx) => (
+                  <img src={src} alt={item.name} key={`${item.name}-${idx}`} />
+                ))}
               </div>
             </div>
           ))}
