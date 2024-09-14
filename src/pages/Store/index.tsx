@@ -1,7 +1,15 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import porticoImg from "src/favicon.png";
 import { PRODUCTOS } from "src/assets/PARAFERNALIA";
 import { toTitleCase } from "src/utils/string";
+import {
+  ArrowLeftIcon,
+  ArrowRightIcon,
+  CaretLeftIcon,
+  CaretRightIcon,
+  DoubleArrowLeftIcon,
+  DoubleArrowRightIcon,
+} from "@radix-ui/react-icons";
 import "./styles.scss";
 
 type TCategory =
@@ -80,15 +88,98 @@ const Store: React.FC = () => {
             <div key={item.id} className="content-items-item">
               <h3>{item.name}</h3>
               <p>${item.price.toFixed(2)}</p>
-              <div className="content-items-item-img">
-                {item.srcs.map((src, idx) => (
-                  <img src={src} alt={item.name} key={`${item.name}-${idx}`} />
-                ))}
-              </div>
+              <ItemImage item={item} />
             </div>
           ))}
         </div>
       </div>
+    </div>
+  );
+};
+
+interface ItemImageProps {
+  item: Item;
+}
+
+const ItemImage = ({ item }: ItemImageProps) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [imageSrc, setImageSrc] = useState(item.srcs[0]);
+  const [startX, setStartX] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+
+  useEffect(() => {
+    setImageSrc(item.srcs[currentIndex]);
+  }, [currentIndex, item.srcs]);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setStartX(e.touches[0].clientX);
+    setIsDragging(true);
+  };
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    setStartX(e.clientX);
+    setIsDragging(true);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (!isDragging) return;
+    const currentX = e.touches[0].clientX;
+    handleDrag(currentX);
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging) return;
+    const currentX = e.clientX;
+    handleDrag(currentX);
+  };
+
+  const handleDragEnd = () => {
+    setIsDragging(false);
+  };
+
+  const handleDrag = (currentX: number) => {
+    const diff = startX - currentX;
+    if (diff > 50 && currentIndex < item.srcs.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+      setIsDragging(false);
+    } else if (diff < -50 && currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+      setIsDragging(false);
+    }
+  };
+
+  return (
+    <div
+      className="content-items-item-img"
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleDragEnd}
+      onMouseDown={handleMouseDown}
+      onMouseMove={handleMouseMove}
+      onMouseUp={handleDragEnd}
+      onMouseLeave={handleDragEnd}
+    >
+      <img src={imageSrc} alt={item.name} draggable="false" />
+      {item.srcs.length > 1 && currentIndex > 0 && (
+        <div
+          onClick={() => {
+            setCurrentIndex(0);
+          }}
+          className="content-items-item-img-arrow left"
+        >
+          <CaretLeftIcon width={24} height={24} />
+        </div>
+      )}
+      {item.srcs.length > 1 && currentIndex < item.srcs.length - 1 && (
+        <div
+          onClick={() => {
+            setCurrentIndex(1);
+          }}
+          className="content-items-item-img-arrow right"
+        >
+          <CaretRightIcon width={24} height={24} />
+        </div>
+      )}
     </div>
   );
 };
