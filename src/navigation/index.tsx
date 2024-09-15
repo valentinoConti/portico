@@ -13,6 +13,7 @@ const Navigation = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/store" element={<Store />} />
+          <Route path="/store/:category" element={<Store />} />
           <Route path="/product/*" element={<Product />} />
         </Routes>
       </Suspense>

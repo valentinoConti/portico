@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 
 import { Footer, Header, ItemImage } from "src/components";
 import { allItems, TCategory } from "src/assets/PARAFERNALIA";
@@ -7,9 +7,19 @@ import "./styles.scss";
 import { toTitleCase } from "src/utils/string";
 
 const Store: React.FC = () => {
-  const [selectedCategory, setSelectedCategory] = useState<TCategory>("COMBOS");
-
   const navigate = useNavigate();
+  const { category } = useParams<{ category?: string }>();
+  const [selectedCategory, setSelectedCategory] = useState<TCategory>(
+    (category as TCategory) || "COMBOS"
+  );
+
+  useEffect(() => {
+    navigate(`/store/${selectedCategory}`, { replace: true });
+  }, [selectedCategory, navigate]);
+
+  const handleCategoryChange = (newCategory: TCategory) => {
+    setSelectedCategory(newCategory);
+  };
 
   const filteredItems = allItems.filter(
     (item) => item.category === selectedCategory
@@ -28,7 +38,7 @@ const Store: React.FC = () => {
               className={`filter-btn ${
                 selectedCategory === category ? "active" : ""
               }`}
-              onClick={() => setSelectedCategory(category)}
+              onClick={() => handleCategoryChange(category)}
             >
               {toTitleCase(category)}
             </button>

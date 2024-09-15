@@ -104,6 +104,11 @@ const DESCRIPCION_TUBOS_QUEMADORES_VIDRIO = `Tubo quemador de vidrio.
 
 Lavable, Reutilizable.
 `;
+const DESCRIPCION_ADAPTADOR_HEMBRA_MACHO = `El precio es por cuatro adaptadores.
+
+Adaptador hembra macho para poder utilizar cazuelas hembra con los tubos quemadores.
+`;
+const DESCRIPCION_FILTROS = `15 unidades de filtros (3 paquetes de 5) de metal para los tubos quemadores.`;
 
 export const PRODUCTOS_IMAGES = {
   COMBOS: {
@@ -371,13 +376,12 @@ export const PRODUCTOS_IMAGES = {
     ADAPTADOR_HEMBRA_MACHO: {
       imageSrcs: [ACC_ADAPTADOR_HEMBRA_MACHO],
       price: 15000,
-      description:
-        "Adaptador hembra macho para poder utilizar cazuelas hembra con los tubos quemadores.",
+      description: DESCRIPCION_ADAPTADOR_HEMBRA_MACHO,
     },
     FILTRO: {
       imageSrcs: [ACC_FILTRO_1, ACC_FILTRO_2],
       price: 15000,
-      description: "15 unidades de filtros de metal para los tubos quemadores.",
+      description: DESCRIPCION_FILTROS,
     },
   },
 };

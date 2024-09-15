@@ -3,6 +3,7 @@ import { allItems } from "src/assets/PARAFERNALIA";
 import { toCurrency } from "src/utils/string";
 import { Footer, Header, ItemImage } from "src/components";
 import "./styles.scss";
+import { useEffect } from "react";
 
 const Product = () => {
   const params = useParams();
@@ -11,6 +12,10 @@ const Product = () => {
   const item = allItems.find((item) => {
     return item.id === id;
   });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="product">

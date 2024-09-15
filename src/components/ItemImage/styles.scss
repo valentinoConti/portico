@@ -1,3 +1,5 @@
+@import "src/globals.scss";
+
 .item-image {
   display: flex;
   flex-direction: row;
@@ -10,6 +12,11 @@
     object-fit: cover;
     border-radius: 12px;
     // object-position: bottom;
+
+    max-width: 700px;
+    @include midDesktop {
+      max-width: 100%;
+    }
   }
 
   &-arrow {
