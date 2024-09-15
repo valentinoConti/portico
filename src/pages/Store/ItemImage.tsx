@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Item } from "./index";
 import { CaretLeftIcon, CaretRightIcon } from "@radix-ui/react-icons";
+import { Item } from "src/assets/PARAFERNALIA";
 
 interface ItemImageProps {
   item: Item;

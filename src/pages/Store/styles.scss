@@ -53,6 +53,14 @@
         max-width: 900px;
       }
 
+      @include midDesktop {
+        max-width: 1100px;
+      }
+
+      @include bigDesktop {
+        max-width: 1300px;
+      }
+
       &-item {
         background-color: var(--color-primary-500);
         border-radius: 8px;

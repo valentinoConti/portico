@@ -3,20 +3,18 @@ import { useNavigate } from "react-router-dom";
 
 import { ItemImage } from "./ItemImage";
 import { Header } from "src/components";
-import { allItems } from "src/assets/PARAFERNALIA";
+import { allItems, TCategory } from "src/assets/PARAFERNALIA";
 import "./styles.scss";
 
 const Store: React.FC = () => {
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState<TCategory>("COMBOS");
 
   const navigate = useNavigate();
 
-  const filteredItems =
-    selectedCategory === "All"
-      ? allItems
-      : allItems.filter((item) => item.category === selectedCategory);
-
-  const categories = ["All", ...new Set(allItems.map((item) => item.category))];
+  const filteredItems = allItems.filter(
+    (item) => item.category === selectedCategory
+  );
+  const categories = [...new Set(allItems.map((item) => item.category))];
 
   return (
     <div className="store">
