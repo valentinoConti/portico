@@ -100,7 +100,10 @@ Tubo quemador apto para todas las tapas.
 
 Apto para 10 usos o 1 mes; lo que suceda primero.
 `;
-const DESCRIPCION_TUBOS_QUEMADORES_VIDRIO = "Tubo quemador de vidrio.";
+const DESCRIPCION_TUBOS_QUEMADORES_VIDRIO = `Tubo quemador de vidrio.
+
+Lavable, Reutilizable.
+`;
 
 export const PRODUCTOS_IMAGES = {
   COMBOS: {

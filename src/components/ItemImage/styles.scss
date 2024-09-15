@@ -1,0 +1,48 @@
+.item-image {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    // object-position: bottom;
+  }
+
+  &-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+
+    position: absolute;
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: white;
+      border-radius: 12px;
+      background-color: var(--color-primary-200);
+
+      width: 30px;
+      height: 30px;
+    }
+
+    &.left {
+      left: 0px;
+      top: 46%;
+    }
+
+    &.right {
+      right: 0px;
+      top: 46%;
+    }
+  }
+}

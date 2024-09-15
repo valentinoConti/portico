@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { allItems } from "src/assets/PARAFERNALIA";
 import { toCurrency } from "src/utils/string";
-import { Header } from "src/components";
+import { Footer, Header, ItemImage } from "src/components";
 import "./styles.scss";
 
 const Product = () => {
@@ -19,7 +19,8 @@ const Product = () => {
       {item && (
         <div className="product-content">
           <div className="product-content-container">
-            <img id="product-image" src={item?.srcs[0]} alt={item?.name} />
+            <ItemImage item={item} />
+
             <div className="product-info">
               <div className="product-info-header">
                 <h1>{item?.name}</h1>
@@ -33,6 +34,8 @@ const Product = () => {
           </div>
         </div>
       )}
+
+      <Footer />
     </div>
   );
 };

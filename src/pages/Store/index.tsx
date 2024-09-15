@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import { ItemImage } from "./ItemImage";
-import { Header } from "src/components";
+import { Footer, Header, ItemImage } from "src/components";
 import { allItems, TCategory } from "src/assets/PARAFERNALIA";
 import "./styles.scss";
+import { toTitleCase } from "src/utils/string";
 
 const Store: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<TCategory>("COMBOS");
@@ -30,7 +30,7 @@ const Store: React.FC = () => {
               }`}
               onClick={() => setSelectedCategory(category)}
             >
-              {category}
+              {toTitleCase(category)}
             </button>
           ))}
         </div>
@@ -52,6 +52,8 @@ const Store: React.FC = () => {
           ))}
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };
