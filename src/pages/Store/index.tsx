@@ -51,7 +51,6 @@ const Store: React.FC = () => {
               key={item.id}
               className="content-items-item"
               onClick={() => {
-                console.log("HOLAAA");
                 navigate(`/product/${item.id}`);
               }}
             >

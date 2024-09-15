@@ -6,12 +6,24 @@
   gap: 10px;
   position: relative;
 
+  aspect-ratio: 3/4;
+
+  &-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    z-index: 1;
+  }
+
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 12px;
-    // object-position: bottom;
+    z-index: 2;
 
     max-width: 700px;
     @include midDesktop {
@@ -28,6 +40,7 @@
     height: 45px;
 
     position: absolute;
+    z-index: 3;
 
     &-icon {
       display: flex;

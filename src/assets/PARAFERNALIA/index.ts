@@ -169,7 +169,9 @@ const DESCRIPCION_TUBOS_QUEMADORES_DESCARTABLES = `El precio es por tres tubos q
 
 Tubo quemador apto para todas las tapas.
 
-Apto para 10 usos o 1 mes; lo que suceda primero.
+Apto para 10 sesiones o 1 mes; lo que suceda primero.
+
+Para usuarios recorrentes, recomendado adquirir el tubo quemador de vidrio.
 `;
 
 const DESCRIPCION_TUBOS_QUEMADORES_VIDRIO = `Tubo quemador de vidrio.
@@ -180,11 +182,15 @@ Lavable, Reutilizable.
 const DESCRIPCION_ADAPTADOR_HEMBRA_MACHO = `El precio es por cuatro adaptadores.
 
 Adaptador hembra macho para poder utilizar cazuelas hembra con los tubos quemadores.
+
+Los adaptadores son descartables.
+
+Apto para 10 sesiones o 1 mes; lo que suceda primero.
 `;
 
 const DESCRIPCION_FILTROS = `15 unidades de filtros (3 paquetes de 5) de metal para los tubos quemadores.`;
 
-export const PRODUCTOS_IMAGES = {
+export const PRODUCTOS = {
   COMBOS: {
     ECONOMICO_VERDE_63: {
       imageSrcs: [COMBO_ECONOMICO_VERDE_63],
@@ -604,9 +610,12 @@ export type TCategory =
   | "TAPAS_63"
   | "TAPAS_70"
   | "TUBOS"
+  | "TUBOS_QUEMADORES"
   | "ACCESORIOS"
   | "COMBOS"
-  | "CAZUELAS";
+  | "CAZUELAS"
+  | "DECORACION";
+
 export interface Item {
   id: string;
   name: string;
@@ -618,9 +627,9 @@ export interface Item {
 
 const getAllItems = (): Item[] => {
   const allItems: Item[] = [];
-  const PRODUCTS_IMAGES_ENTRIES = Object.entries(PRODUCTOS_IMAGES);
+  const PRODUCTOS_ENTRIES = Object.entries(PRODUCTOS);
 
-  PRODUCTS_IMAGES_ENTRIES.forEach(([category, item]) => {
+  PRODUCTOS_ENTRIES.forEach(([category, item]) => {
     Object.entries(item).forEach(([name, itemInfo]) => {
       allItems.push({
         id: `${category}-${name}`,

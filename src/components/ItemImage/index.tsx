@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { CaretLeftIcon, CaretRightIcon } from "@radix-ui/react-icons";
 import { Item } from "src/assets/PARAFERNALIA";
+import { Loader } from "src/components";
 import "./styles.scss";
 
 interface ItemImageProps {
@@ -17,6 +18,10 @@ export const ItemImage = ({ item }: ItemImageProps) => {
 
   return (
     <div className="item-image">
+      <div className="item-image-loader">
+        <Loader />
+      </div>
+
       <img src={imageSrc} alt={item.name} draggable="false" />
       {item.srcs.length > 1 && currentIndex > 0 && (
         <div
