@@ -3,8 +3,8 @@ import { useNavigate, useParams } from "react-router-dom";
 
 import { Footer, Header, ItemImage } from "src/components";
 import { allItems, TCategory } from "src/assets/PARAFERNALIA";
-import "./styles.scss";
 import { toTitleCase } from "src/utils/string";
+import "./styles.scss";
 
 const Store: React.FC = () => {
   const navigate = useNavigate();
@@ -56,7 +56,7 @@ const Store: React.FC = () => {
               }}
             >
               <h3>{item.name}</h3>
-              <p>${item.price.toFixed(2)}</p>
+              <p>${item.price.toFixed(0)}</p>
               <ItemImage item={item} />
             </div>
           ))}

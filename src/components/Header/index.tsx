@@ -1,17 +1,61 @@
-import porticoImg from "src/favicon.png";
-import "./styles.scss";
 import { useNavigate } from "react-router-dom";
+import { ArrowLeftIcon } from "@radix-ui/react-icons";
 
-const Header = () => {
+import porticoImg from "src/favicon.png";
+import useLocalStorage from "src/utils/useLocalStorage";
+import { Item } from "src/assets/PARAFERNALIA";
+import { ShoppingCartIcon } from "src/icons";
+import "./styles.scss";
+
+interface IHeaderProps {
+  showBackButton?: boolean;
+}
+
+const Header = ({ showBackButton = false }: IHeaderProps) => {
   const navigate = useNavigate();
 
+  const [cartItems] = useLocalStorage<Item[]>("cartItems", []);
+
   return (
-    <header className="header">
-      <div className="header-container" onClick={() => navigate("/store")}>
-        <img src={porticoImg} alt="Logo de Portico" width={55} height={55} />
-        <span className="header-container-name">PORTICO</span>
+    <>
+      <header className="header">
+        {showBackButton && (
+          <div className="header-back-button" onClick={() => navigate(-1)}>
+            <ArrowLeftIcon height={22} width={22} />
+            <span>Volver</span>
+          </div>
+        )}
+
+        <div className="header-container" onClick={() => navigate("/store")}>
+          <img src={porticoImg} alt="Logo de Portico" width={55} height={55} />
+          <span className="header-container-name">PORTICO</span>
+        </div>
+
+        <div className="header-cart" onClick={() => navigate("/cart")}>
+          <span>{cartItems.length}</span>
+          <ShoppingCartIcon size={24} />
+          <span>Carrito</span>
+        </div>
+      </header>
+
+      <div className="header-mobile">
+        {showBackButton && (
+          <div
+            className="header-mobile-back-button"
+            onClick={() => navigate(-1)}
+          >
+            <ArrowLeftIcon height={22} width={22} />
+            <span>Volver</span>
+          </div>
+        )}
+
+        <div className="header-mobile-cart" onClick={() => navigate("/cart")}>
+          <span>{cartItems.length}</span>
+          <ShoppingCartIcon size={24} />
+          <span>Carrito</span>
+        </div>
       </div>
-    </header>
+    </>
   );
 };
 

@@ -5,6 +5,7 @@ import { Loader } from "src/components";
 const Home = lazy(() => import("../pages/Home"));
 const Store = lazy(() => import("../pages/Store"));
 const Product = lazy(() => import("../pages/Product"));
+const Cart = lazy(() => import("../pages/Cart"));
 
 const Navigation = () => {
   return (
@@ -15,6 +16,7 @@ const Navigation = () => {
           <Route path="/store" element={<Store />} />
           <Route path="/store/:category" element={<Store />} />
           <Route path="/product/*" element={<Product />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </Suspense>
     </HashRouter>

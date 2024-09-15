@@ -1,5 +1,5 @@
-import "./styles.scss";
 import { InstagramIcon, WhatsappIcon } from "src/icons";
+import "./styles.scss";
 
 const Footer = () => {
   return (

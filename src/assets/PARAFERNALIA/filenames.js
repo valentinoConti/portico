@@ -1,7 +1,14 @@
 const fs = require("fs");
-const path = require("path");
 
-const resizedFolderPath = path.join(__dirname, "resized");
+// script used like this:
+// node filenames.js ~/Desktop/fotosOriginales/
+
+const folderName = process.argv[2];
+if (!folderName) {
+  console.error("Please provide a folder name as an argument.");
+  process.exit(1);
+}
+const resizedFolderPath = folderName;
 
 fs.readdir(resizedFolderPath, (err, files) => {
   if (err) {

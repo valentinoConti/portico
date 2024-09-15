@@ -5,6 +5,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  position: relative;
 
   width: 100%;
   height: 70px;
@@ -38,6 +39,91 @@
       @include tablet {
         font-size: 52px;
         letter-spacing: 10px;
+      }
+    }
+  }
+
+  &-back-button {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+
+    display: none;
+    @include desktop {
+      display: flex;
+    }
+  }
+
+  &-cart {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+
+    color: white;
+
+    display: none;
+    @include desktop {
+      display: flex;
+    }
+  }
+
+  &-mobile {
+    display: flex;
+    @include desktop {
+      display: none;
+    }
+
+    align-items: center;
+    gap: 8px;
+    height: 46px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: var(--color-primary-700);
+
+    &-back-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    &-cart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-left: auto;
+
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
       }
     }
   }
