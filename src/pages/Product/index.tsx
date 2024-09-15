@@ -20,9 +20,15 @@ const Product = () => {
         <div className="product-content">
           <div className="product-content-container">
             <img id="product-image" src={item?.srcs[0]} alt={item?.name} />
-            <div id="product-info">
-              <h1>{item?.name}</h1>
-              <h2>{toCurrency(item?.price)}</h2>
+            <div className="product-info">
+              <div className="product-info-header">
+                <h1>{item?.name}</h1>
+                <h2>{toCurrency(item?.price)}</h2>
+              </div>
+
+              <div className="product-info-description">
+                <p>{item?.description}</p>
+              </div>
             </div>
           </div>
         </div>
