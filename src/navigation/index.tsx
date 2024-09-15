@@ -4,6 +4,7 @@ import { Loader } from "src/components";
 
 const Home = lazy(() => import("../pages/Home"));
 const Store = lazy(() => import("../pages/Store"));
+const Product = lazy(() => import("../pages/Product"));
 
 const Navigation = () => {
   return (
@@ -12,6 +13,7 @@ const Navigation = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/store" element={<Store />} />
+          <Route path="/product/*" element={<Product />} />
         </Routes>
       </Suspense>
     </HashRouter>

@@ -1,0 +1,44 @@
+@import "src/globals.scss";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(
+    to right,
+    var(--color-primary-400),
+    var(--color-primary-800)
+  );
+  border-bottom: 2px solid var(--color-primary-800);
+
+  &-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    img {
+      margin-right: 10px;
+    }
+
+    &-name {
+      font-family: "Chronica", sans-serif;
+      font-size: 48px;
+      letter-spacing: 5px;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+        1px 1px 0 #000;
+
+      transform: translateY(6px);
+
+      @include tablet {
+        font-size: 52px;
+        letter-spacing: 10px;
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 $tabletBreakpoint: 600px;
 $desktopBreakpoint: 1024px;
+$midDesktopBreakpoint: 1280px;
 $bigDesktopBreakpoint: 1440px;
 
 @mixin tablet {
@@ -10,6 +11,12 @@ $bigDesktopBreakpoint: 1440px;
 
 @mixin desktop {
   @media only screen and (min-width: $desktopBreakpoint) {
+    @content;
+  }
+}
+
+@mixin midDesktop {
+  @media only screen and (min-width: $midDesktopBreakpoint) {
     @content;
   }
 }
