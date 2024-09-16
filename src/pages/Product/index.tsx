@@ -1,5 +1,10 @@
 import { useEffect } from "react";
-import { CheckCircledIcon } from "@radix-ui/react-icons";
+import {
+  ArrowLeftIcon,
+  CheckCircledIcon,
+  TrashIcon,
+} from "@radix-ui/react-icons";
+import { useNavigate } from "react-router-dom";
 
 import useLocalStorage from "src/utils/useLocalStorage";
 import { useParams } from "react-router-dom";
@@ -7,10 +12,12 @@ import { allItems, Item } from "src/assets/PARAFERNALIA";
 import { toCurrency } from "src/utils/string";
 import { Footer, Header, ItemImage } from "src/components";
 import "./styles.scss";
+import { ShoppingCartIcon } from "src/icons";
 
 const Product = () => {
   const params = useParams();
   const id = params?.["*"];
+  const navigate = useNavigate();
 
   const item = allItems.find((item) => {
     return item.id === id;
@@ -22,6 +29,10 @@ const Product = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const handleContinueShopping = () => {
+    navigate(-1);
+  };
 
   return (
     <div className="product">
@@ -43,41 +54,50 @@ const Product = () => {
               </div>
 
               <div className="product-info-cart-buttons">
-                <button
-                  className={`button ${IS_ADDED_TO_CART ? "added" : "add"}`}
-                  onClick={() => {
-                    if (IS_ADDED_TO_CART) return;
-
-                    setCartItems([...cartItems, item]);
-                  }}
-                  style={{
-                    cursor: IS_ADDED_TO_CART ? "not-allowed" : "pointer",
-                  }}
-                >
-                  {IS_ADDED_TO_CART ? (
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "8px",
-                      }}
-                    >
-                      <CheckCircledIcon /> Agregado al carrito
-                    </div>
-                  ) : (
-                    "Agregar al carrito"
-                  )}
-                </button>
-
-                {IS_ADDED_TO_CART && (
+                {IS_ADDED_TO_CART ? (
+                  <div className="added-text">
+                    <CheckCircledIcon />
+                    Agregado!
+                  </div>
+                ) : (
                   <button
-                    className="button remove"
+                    className="button add"
                     onClick={() => {
-                      setCartItems(cartItems.filter((item) => item.id !== id));
+                      setCartItems([...cartItems, item]);
                     }}
                   >
-                    Eliminar del carrito
+                    Agregar al carrito
                   </button>
+                )}
+
+                {IS_ADDED_TO_CART && (
+                  <>
+                    <button
+                      className="button go-to-cart"
+                      onClick={() => navigate("/cart")}
+                    >
+                      <ShoppingCartIcon size={16} />
+                      Ir al carrito
+                    </button>
+                    <button
+                      className="button remove"
+                      onClick={() => {
+                        setCartItems(
+                          cartItems.filter((item) => item.id !== id)
+                        );
+                      }}
+                    >
+                      <TrashIcon width={18} height={18} />
+                      Eliminar del carrito
+                    </button>
+                    <button
+                      className="button continue-shopping"
+                      onClick={handleContinueShopping}
+                    >
+                      <ArrowLeftIcon width={18} height={18} />
+                      Seguir comprando
+                    </button>
+                  </>
                 )}
               </div>
             </div>

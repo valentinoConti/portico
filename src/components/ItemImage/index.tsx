@@ -27,7 +27,7 @@ export const ItemImage = ({ item }: ItemImageProps) => {
         <div
           onClick={(ev) => {
             ev.stopPropagation();
-            setCurrentIndex(0);
+            setCurrentIndex(currentIndex - 1);
           }}
           className="item-image-arrow left"
         >
@@ -40,7 +40,7 @@ export const ItemImage = ({ item }: ItemImageProps) => {
         <div
           onClick={(ev) => {
             ev.stopPropagation();
-            setCurrentIndex(1);
+            setCurrentIndex(currentIndex + 1);
           }}
           className="item-image-arrow right"
         >

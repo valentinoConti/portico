@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { ArrowLeftIcon } from "@radix-ui/react-icons";
 
 import porticoImg from "src/favicon.png";
@@ -13,8 +13,11 @@ interface IHeaderProps {
 
 const Header = ({ showBackButton = false }: IHeaderProps) => {
   const navigate = useNavigate();
+  const location = useLocation();
 
   const [cartItems] = useLocalStorage<Item[]>("cartItems", []);
+
+  const shouldShowCart = location.pathname !== "/cart";
 
   return (
     <>
@@ -31,11 +34,13 @@ const Header = ({ showBackButton = false }: IHeaderProps) => {
           <span className="header-container-name">PORTICO</span>
         </div>
 
-        <div className="header-cart" onClick={() => navigate("/cart")}>
-          <span>{cartItems.length}</span>
-          <ShoppingCartIcon size={24} />
-          <span>Carrito</span>
-        </div>
+        {shouldShowCart && (
+          <div className="header-cart" onClick={() => navigate("/cart")}>
+            <span>{cartItems.length}</span>
+            <ShoppingCartIcon size={24} />
+            <span>Carrito</span>
+          </div>
+        )}
       </header>
 
       <div className="header-mobile">
@@ -49,11 +54,13 @@ const Header = ({ showBackButton = false }: IHeaderProps) => {
           </div>
         )}
 
-        <div className="header-mobile-cart" onClick={() => navigate("/cart")}>
-          <span>{cartItems.length}</span>
-          <ShoppingCartIcon size={24} />
-          <span>Carrito</span>
-        </div>
+        {shouldShowCart && (
+          <div className="header-mobile-cart" onClick={() => navigate("/cart")}>
+            <span>{cartItems.length}</span>
+            <ShoppingCartIcon size={24} />
+            <span>Carrito</span>
+          </div>
+        )}
       </div>
     </>
   );

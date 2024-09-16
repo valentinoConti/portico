@@ -129,6 +129,7 @@ const DESCRIPCION_COMBOS = `Los combos incluyen:
 
 - 1 Tubo.
 - 1 Tapa.
+- 1 Frasco.
 - 1 Cazuela de vidrio.
 - 1 Tubo quemador de vidrio.
 - 3 Orings para la tapa.
@@ -139,6 +140,7 @@ const DESCRIPCION_COMBOS_ECONOMICOS = `Los combos económicos incluyen:
 
 - 1 Tubo Shoter.
 - 1 Tapa.
+- 1 Frasco.
 - 1 Cazuela de vidrio.
 - 3 Tubos quemadores descartables.
 - 3 Orings para la tapa.
@@ -149,6 +151,7 @@ const DESCRIPCION_COMBOS_SHINY = `Los combos Shiny incluyen:
 
 - 1 Tubo.
 - 1 Tapa.
+- 1 Frasco.
 - 1 Cazuela de vidrio.
 - 1 Tubo quemador de vidrio.
 - 3 Orings para la tapa.

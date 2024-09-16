@@ -31,6 +31,8 @@ const Store: React.FC = () => {
       <Header />
 
       <div className="content">
+        <h1>Tienda</h1>
+
         <div className="content-filters">
           {categories.map((category) => (
             <button
