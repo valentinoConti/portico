@@ -18,6 +18,17 @@
       margin-bottom: 20px;
       color: white;
       font-size: 2em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      svg {
+        transform: translateY(2px);
+      }
+    }
+
+    h2 {
+      font-size: 26px;
     }
 
     &-items {
@@ -26,6 +37,9 @@
       gap: 20px;
       width: 100%;
       max-width: 600px;
+
+      padding: 20px;
+      background-color: var(--color-primary-700);
 
       @include tablet {
         grid-template-columns: repeat(2, 1fr);

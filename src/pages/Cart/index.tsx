@@ -3,6 +3,7 @@ import useLocalStorage from "src/utils/useLocalStorage";
 import { Item } from "src/assets/PARAFERNALIA";
 import { Footer, Header, ItemImage } from "src/components";
 import "./styles.scss";
+import { ShoppingCartIcon } from "src/icons";
 
 const Cart: React.FC = () => {
   const [cartItems, setCartItems] = useLocalStorage<Item[]>("cartItems", []);
@@ -107,7 +108,9 @@ Total: $${totalPrice.toFixed(0)}`;
               </div>
             </div>
 
-            <h1>Mi Carrito</h1>
+            <h1>
+              Mi Carrito <ShoppingCartIcon size={26} />
+            </h1>
 
             <div className="content-items">
               {cartItems.map((item) => (
