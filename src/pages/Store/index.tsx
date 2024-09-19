@@ -24,7 +24,17 @@ const Store: React.FC = () => {
   const filteredItems = allItems.filter(
     (item) => item.category === selectedCategory
   );
-  const categories = [...new Set(allItems.map((item) => item.category))];
+
+  const categories: TCategory[] = [
+    "COMBOS",
+    "TUBOS",
+    "TAPAS_63",
+    "TAPAS_70",
+    "TUBOS_QUEMADORES",
+    "CAZUELAS",
+    "ACCESORIOS",
+    "DECORACION",
+  ];
 
   return (
     <div className="store">
@@ -50,10 +60,10 @@ const Store: React.FC = () => {
         <div className="content-items">
           {filteredItems.map((item) => (
             <div
-              key={item.id}
+              key={item.key}
               className="content-items-item"
               onClick={() => {
-                navigate(`/product/${item.id}`);
+                navigate(`/product/${item.key}`);
               }}
             >
               <h3>{item.name}</h3>

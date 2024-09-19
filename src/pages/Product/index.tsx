@@ -20,11 +20,11 @@ const Product = () => {
   const navigate = useNavigate();
 
   const item = allItems.find((item) => {
-    return item.id === id;
+    return item.key === id;
   });
 
   const [cartItems, setCartItems] = useLocalStorage<Item[]>("cartItems", []);
-  const IS_ADDED_TO_CART = cartItems.some((item) => item.id === id);
+  const IS_ADDED_TO_CART = cartItems.some((item) => item.key === id);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -83,7 +83,7 @@ const Product = () => {
                       className="button remove"
                       onClick={() => {
                         setCartItems(
-                          cartItems.filter((item) => item.id !== id)
+                          cartItems.filter((item) => item.key !== id)
                         );
                       }}
                     >

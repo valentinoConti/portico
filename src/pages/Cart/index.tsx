@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import useLocalStorage from "src/utils/useLocalStorage";
 import { Item } from "src/assets/PARAFERNALIA";
 import { Footer, Header, ItemImage } from "src/components";
-import "./styles.scss";
 import { ShoppingCartIcon } from "src/icons";
+import "./styles.scss";
 
 const Cart: React.FC = () => {
   const [cartItems, setCartItems] = useLocalStorage<Item[]>("cartItems", []);
@@ -18,7 +18,7 @@ const Cart: React.FC = () => {
   }, []);
 
   const handleRemoveItem = (itemId: string) => {
-    setCartItems(cartItems.filter((item) => item.id !== itemId));
+    setCartItems(cartItems.filter((item) => item.key !== itemId));
   };
 
   const handleSendOrder = (e: React.FormEvent) => {
@@ -114,11 +114,11 @@ Total: $${totalPrice.toFixed(0)}`;
 
             <div className="content-items">
               {cartItems.map((item) => (
-                <div key={item.id} className="content-items-item">
+                <div key={item.key} className="content-items-item">
                   <h3>{item.name}</h3>
                   <p>${item.price.toFixed(0)}</p>
                   <ItemImage item={item} />
-                  <button onClick={() => handleRemoveItem(item.id)}>
+                  <button onClick={() => handleRemoveItem(item.key)}>
                     Eliminar
                   </button>
                 </div>

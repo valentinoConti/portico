@@ -10,11 +10,11 @@ interface ItemImageProps {
 
 export const ItemImage = ({ item }: ItemImageProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [imageSrc, setImageSrc] = useState(item.srcs[0]);
+  const [imageSrc, setImageSrc] = useState(item.imageSrcs[0]);
 
   useEffect(() => {
-    setImageSrc(item.srcs[currentIndex]);
-  }, [currentIndex, item.srcs]);
+    setImageSrc(item.imageSrcs[currentIndex]);
+  }, [currentIndex, item.imageSrcs]);
 
   return (
     <div className="item-image">
@@ -23,7 +23,7 @@ export const ItemImage = ({ item }: ItemImageProps) => {
       </div>
 
       <img src={imageSrc} alt={item.name} draggable="false" />
-      {item.srcs.length > 1 && currentIndex > 0 && (
+      {item.imageSrcs.length > 1 && currentIndex > 0 && (
         <div
           onClick={(ev) => {
             ev.stopPropagation();
@@ -36,19 +36,20 @@ export const ItemImage = ({ item }: ItemImageProps) => {
           </div>
         </div>
       )}
-      {item.srcs.length > 1 && currentIndex < item.srcs.length - 1 && (
-        <div
-          onClick={(ev) => {
-            ev.stopPropagation();
-            setCurrentIndex(currentIndex + 1);
-          }}
-          className="item-image-arrow right"
-        >
-          <div className="item-image-arrow-icon">
-            <CaretRightIcon width={24} height={24} />
+      {item.imageSrcs.length > 1 &&
+        currentIndex < item.imageSrcs.length - 1 && (
+          <div
+            onClick={(ev) => {
+              ev.stopPropagation();
+              setCurrentIndex(currentIndex + 1);
+            }}
+            className="item-image-arrow right"
+          >
+            <div className="item-image-arrow-icon">
+              <CaretRightIcon width={24} height={24} />
+            </div>
           </div>
-        </div>
-      )}
+        )}
     </div>
   );
 };
