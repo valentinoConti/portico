@@ -194,90 +194,50 @@ export const PRODUCTOS: Record<string, Item> = {
     stock: 1,
   },
   LARRY_DIZZY_ROJO: {
-    category: "COMBOS",
-    name: "Bong Combo Larry Dizzy Rojo",
+    category: "TUBOS",
+    name: "Tubo Dizzy Rojo",
     imageSrcs: [COMBO_LARRY_DIZZY_ROJO_1, COMBO_LARRY_DIZZY_ROJO_2],
-    price: 30000,
-    description: `Los combos incluyen:
-
-- 1 Tubo.
-- 1 Tapa.
-- 1 Frasco.
-- 1 Cazuela de vidrio.
-- 1 Tubo quemador de vidrio.
-- 3 Orings para la tapa.
-- 5 Filtros de metal.`,
+    price: 15000,
+    description: `Tubo con rosca para conectar sobre cualquier tapa`,
     stock: 1,
   },
   LARRY_GROGUI_NARANJA: {
-    category: "COMBOS",
-    name: "Bong Combo Larry Grogui Naranja",
+    category: "TUBOS",
+    name: "Tubo Grogui Naranja",
     imageSrcs: [COMBO_LARRY_GROGUI_NARANJA_1, COMBO_LARRY_GROGUI_NARANJA_2],
-    price: 30000,
-    description: `Los combos incluyen:
-
-- 1 Tubo.
-- 1 Tapa.
-- 1 Frasco.
-- 1 Cazuela de vidrio.
-- 1 Tubo quemador de vidrio.
-- 3 Orings para la tapa.
-- 5 Filtros de metal.`,
+    price: 15000,
+    description: `Tubo con rosca para conectar sobre cualquier tapa`,
     stock: 1,
   },
   LARRY_GROGUI_ROSA: {
-    category: "COMBOS",
-    name: "Bong Combo Larry Grogui Rosa",
+    category: "TUBOS",
+    name: "Tubo Grogui Rosa",
     imageSrcs: [COMBO_LARRY_GROGUI_ROSA_1, COMBO_LARRY_GROGUI_ROSA_2],
-    price: 30000,
-    description: `Los combos incluyen:
-
-- 1 Tubo.
-- 1 Tapa.
-- 1 Frasco.
-- 1 Cazuela de vidrio.
-- 1 Tubo quemador de vidrio.
-- 3 Orings para la tapa.
-- 5 Filtros de metal.`,
+    price: 15000,
+    description: `Tubo con rosca para conectar sobre cualquier tapa`,
     stock: 1,
   },
 
   ROCKIE_DIZZY_NARANJA: {
-    category: "COMBOS",
-    name: "Bong Combo Rockie Dizzy Naranja",
+    category: "TUBOS",
+    name: "Tubo Dizzy Naranja",
     imageSrcs: [COMBO_ROCKIE_DIZZY_NARANJA_1, COMBO_ROCKIE_DIZZY_NARANJA_2],
-    price: 30000,
-    description: `Los combos incluyen:
-
-- 1 Tubo.
-- 1 Tapa.
-- 1 Frasco.
-- 1 Cazuela de vidrio.
-- 1 Tubo quemador de vidrio.
-- 3 Orings para la tapa.
-- 5 Filtros de metal.`,
+    price: 15000,
+    description: `Tubo con rosca para conectar sobre cualquier tapa`,
     stock: 1,
   },
 
   ROCKIE_GROGUI_ROJO: {
-    category: "COMBOS",
-    name: "ROCKIE_GROGUI_ROJO",
+    category: "TUBOS",
+    name: "Tubo Grogui Rojo",
     imageSrcs: [COMBO_ROCKIE_GROGUI_ROJO_1, COMBO_ROCKIE_GROGUI_ROJO_2],
-    price: 30000,
-    description: `Los combos incluyen:
-
-- 1 Tubo.
-- 1 Tapa.
-- 1 Frasco.
-- 1 Cazuela de vidrio.
-- 1 Tubo quemador de vidrio.
-- 3 Orings para la tapa.
-- 5 Filtros de metal.`,
+    price: 15000,
+    description: `Tubo con rosca para conectar sobre cualquier tapa`,
     stock: 1,
   },
   ROCKIE_GROGUI_ROSA_ROSACLARO: {
     category: "COMBOS",
-    name: "ROCKIE_GROGUI_ROSA_ROSACLARO",
+    name: "Bong Combo Rockie Grogui Rosas",
     imageSrcs: [
       COMBO_ROCKIE_GROGUI_ROSA_ROSACLARO_1,
       COMBO_ROCKIE_GROGUI_ROSA_ROSACLARO_2,
@@ -295,40 +255,24 @@ export const PRODUCTOS: Record<string, Item> = {
     stock: 1,
   },
   ROCKIE_SHOOTER_NARANJA: {
-    category: "COMBOS",
-    name: "ROCKIE_SHOOTER_NARANJA",
+    category: "TUBOS",
+    name: "Tubo Shooter Naranja",
     imageSrcs: [COMBO_ROCKIE_SHOOTER_NARANJA_1, COMBO_ROCKIE_SHOOTER_NARANJA_2],
-    price: 30000,
-    description: `Los combos incluyen:
-
-- 1 Tubo.
-- 1 Tapa.
-- 1 Frasco.
-- 1 Cazuela de vidrio.
-- 1 Tubo quemador de vidrio.
-- 3 Orings para la tapa.
-- 5 Filtros de metal.`,
+    price: 9000,
+    description: `Tubo con rosca para conectar sobre cualquier tapa`,
     stock: 1,
   },
   ROCKIE_SHOOTER_PINTADO: {
-    category: "COMBOS",
-    name: "ROCKIE_SHOOTER_PINTADO",
+    category: "TUBOS",
+    name: "Tubo Shooter Pintado",
     imageSrcs: [COMBO_ROCKIE_SHOOTER_PINTADO_1, COMBO_ROCKIE_SHOOTER_PINTADO_2],
-    price: 30000,
-    description: `Los combos incluyen:
-
-- 1 Tubo.
-- 1 Tapa.
-- 1 Frasco.
-- 1 Cazuela de vidrio.
-- 1 Tubo quemador de vidrio.
-- 3 Orings para la tapa.
-- 5 Filtros de metal.`,
+    price: 15000,
+    description: `Tubo con rosca para conectar sobre cualquier tapa`,
     stock: 1,
   },
   LARRY_GROGUI_SHINY: {
     category: "COMBOS",
-    name: "LARRY_GROGUI_SHINY",
+    name: "Bong Combo Larry Grogui SHINY",
     imageSrcs: [COMBO_LARRY_GROGUI_SHINY_1, COMBO_LARRY_GROGUI_SHINY_2],
     price: 45000,
     description: `Los combos Shiny incluyen:
@@ -346,7 +290,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   ROCKIE_SHOOTER_SHINY: {
     category: "COMBOS",
-    name: "ROCKIE_SHOOTER_SHINY",
+    name: "Bong Combo Rockie Shooter SHINY",
     imageSrcs: [COMBO_ROCKIE_SHOOTER_SHINY_1, COMBO_ROCKIE_SHOOTER_SHINY_2],
     price: 45000,
     description: `Los combos Shiny incluyen:
@@ -364,7 +308,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   ROCKIE_DIZZY_SHINY: {
     category: "COMBOS",
-    name: "ROCKIE_DIZZY_SHINY",
+    name: "Bong Combo Rockie Dizzy SHINY",
     imageSrcs: [COMBO_ROCKIE_DIZZY_SHINY_1, COMBO_ROCKIE_DIZZY_SHINY_2],
     price: 45000,
     description: `Los combos Shiny incluyen:
@@ -390,7 +334,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   DIZZY_ROJO: {
     category: "TUBOS",
-    name: "DIZZY_ROJO",
+    name: "Tubo Dizzy Rojo",
     imageSrcs: [TUBO_DIZZY_ROJO_2, TUBO_DIZZY_ROJO_1],
     price: 15000,
     description: `Tubo con rosca para conectar sobre cualquier tapa`,
@@ -398,7 +342,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   DIZZY_VERDE: {
     category: "TUBOS",
-    name: "DIZZY_VERDE",
+    name: "Tubo Dizzy Verde",
     imageSrcs: [TUBO_DIZZY_VERDE_2, TUBO_DIZZY_VERDE_1],
     price: 15000,
     description: `Tubo con rosca para conectar sobre cualquier tapa`,
@@ -406,7 +350,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   GROGUI_NARANJA: {
     category: "TUBOS",
-    name: "GROGUI_NARANJA",
+    name: "Tubo Grogui Naranja",
     imageSrcs: [TUBO_GROGUI_NARANJA_1, TUBO_GROGUI_NARANJA_2],
     price: 15000,
     description: `Tubo con rosca para conectar sobre cualquier tapa`,
@@ -414,7 +358,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   GROGUI_ROJO: {
     category: "TUBOS",
-    name: "GROGUI_ROJO",
+    name: "Tubo Grogui Rojo",
     imageSrcs: [TUBO_GROGUI_ROJO_1, TUBO_GROGUI_ROJO_2],
     price: 15000,
     description: `Tubo con rosca para conectar sobre cualquier tapa`,
@@ -422,7 +366,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   GROGUI_ROSACLARO: {
     category: "TUBOS",
-    name: "GROGUI_ROSACLARO",
+    name: "Tubo Grogui Rosa Claro",
     imageSrcs: [TUBO_GROGUI_ROSACLARO_1, TUBO_GROGUI_ROSACLARO_2],
     price: 15000,
     description: `Tubo con rosca para conectar sobre cualquier tapa`,
@@ -430,7 +374,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   GROGUI_ROSA: {
     category: "TUBOS",
-    name: "GROGUI_ROSA",
+    name: "Tubo Grogui Rosa",
     imageSrcs: [TUBO_GROGUI_ROSA_1, TUBO_GROGUI_ROSA_2],
     price: 15000,
     description: `Tubo con rosca para conectar sobre cualquier tapa`,
@@ -438,7 +382,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   SHOOTER_AZUL: {
     category: "TUBOS",
-    name: "SHOOTER_AZUL",
+    name: "Tubo Shooter Azul",
     imageSrcs: [TUBO_SHOOTER_AZUL_1, TUBO_SHOOTER_AZUL_2],
     price: 9000,
     description: `Tubo con rosca para conectar sobre cualquier tapa`,
@@ -446,7 +390,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   SHOOTER_NARANJA: {
     category: "TUBOS",
-    name: "SHOOTER_NARANJA",
+    name: "Tubo Shooter Naranja",
     imageSrcs: [TUBO_SHOOTER_NARANJA_1, TUBO_SHOOTER_NARANJA_2],
     price: 9000,
     description: `Tubo con rosca para conectar sobre cualquier tapa`,
@@ -454,7 +398,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   SHOOTER_PINTADO: {
     category: "TUBOS",
-    name: "SHOOTER_PINTADO",
+    name: "Tubo Shooter Pintado",
     imageSrcs: [TUBO_SHOOTER_PINTADO_1, TUBO_SHOOTER_PINTADO_2],
     price: 15000,
     description: `Tubo con rosca para conectar sobre cualquier tapa`,
@@ -462,7 +406,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   SHOOTER_ROSA: {
     category: "TUBOS",
-    name: "SHOOTER_ROSA",
+    name: "Tubo Shooter Rosa",
     imageSrcs: [TUBO_SHOOTER_ROSA_1, TUBO_SHOOTER_ROSA_2],
     price: 9000,
     description: `Tubo con rosca para conectar sobre cualquier tapa`,
@@ -470,7 +414,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   SHOOTER_VERDE: {
     category: "TUBOS",
-    name: "SHOOTER_VERDE",
+    name: "Tubo Shooter Verde",
     imageSrcs: [TUBO_SHOOTER_VERDE_1, TUBO_SHOOTER_VERDE_2],
     price: 9000,
     description: `Tubo con rosca para conectar sobre cualquier tapa`,
@@ -478,7 +422,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   COMUN_ROJO: {
     category: "TAPAS_63",
-    name: "COMUN_ROJO",
+    name: "Tapa Comun Roja 63",
     imageSrcs: [TAPA63_COMUN_ROJO],
     price: 3800,
     description: `Tapa para frasco de 63mm`,
@@ -486,7 +430,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   COMUN_VERDE_63: {
     category: "TAPAS_63",
-    name: "COMUN_VERDE",
+    name: "Tapa Comun Verde 63",
     imageSrcs: [TAPA63_COMUN_VERDE],
     price: 3800,
     description: `Tapa para frasco de 63mm`,
@@ -494,7 +438,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   ROCKIE_NARANJA: {
     category: "TAPAS_63",
-    name: "ROCKIE_NARANJA",
+    name: "Tapa Rockie Naranja",
     imageSrcs: [TAPA63_ROCKIE_NARANJA],
     price: 6500,
     description: `Tapa para frasco de 63mm`,
@@ -502,7 +446,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   ROCKIE_ROJO: {
     category: "TAPAS_63",
-    name: "ROCKIE_ROJO",
+    name: "Tapa Rockie Roja",
     imageSrcs: [TAPA63_ROCKIE_ROJO],
     price: 6500,
     description: `Tapa para frasco de 63mm`,
@@ -510,7 +454,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   ROCKIE_ROSA: {
     category: "TAPAS_63",
-    name: "ROCKIE_ROSA",
+    name: "Tapa Rockie Rosa",
     imageSrcs: [TAPA63_ROCKIE_ROSA],
     price: 6500,
     description: `Tapa para frasco de 63mm`,
@@ -518,7 +462,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   ROCKIE_VERDE: {
     category: "TAPAS_63",
-    name: "ROCKIE_VERDE",
+    name: "Tapa Rockie Verde",
     imageSrcs: [TAPA63_ROCKIE_VERDE],
     price: 6500,
     description: `Tapa para frasco de 63mm`,
@@ -526,7 +470,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   COMUN_AZUL: {
     category: "TAPAS_70",
-    name: "COMUN_AZUL",
+    name: "Tapa Comun Azul 70",
     imageSrcs: [TAPA70_COMUN_AZUL],
     price: 4500,
     description: `Tapa para frasco de 70mm`,
@@ -534,7 +478,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   COMUN_VERDE_70: {
     category: "TAPAS_70",
-    name: "COMUN_VERDE",
+    name: "Tapa Comun Verde 70",
     imageSrcs: [TAPA70_COMUN_VERDE],
     price: 4500,
     description: `Tapa para frasco de 70mm`,
@@ -542,7 +486,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   LARRY_NARANJA: {
     category: "TAPAS_70",
-    name: "LARRY_NARANJA",
+    name: "Tapa Larry Naranja",
     imageSrcs: [TAPA70_LARRY_NARANJA],
     price: 8500,
     description: `Tapa para frasco de 70mm`,
@@ -550,7 +494,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   LARRY_ROJO: {
     category: "TAPAS_70",
-    name: "LARRY_ROJO",
+    name: "Tapa Larry Roja",
     imageSrcs: [TAPA70_LARRY_ROJO],
     price: 8500,
     description: `Tapa para frasco de 70mm`,
@@ -558,7 +502,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   LARRY_ROSA: {
     category: "TAPAS_70",
-    name: "LARRY_ROSA",
+    name: "Tapa Larry Rosa",
     imageSrcs: [TAPA70_LARRY_ROSA],
     price: 8500,
     description: `Tapa para frasco de 70mm`,
@@ -566,7 +510,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   LARRY_VERDE: {
     category: "TAPAS_70",
-    name: "LARRY_VERDE",
+    name: "Tapa Larry Verde",
     imageSrcs: [TAPA70_LARRY_VERDE],
     price: 8500,
     description: `Tapa para frasco de 70mm`,
@@ -574,7 +518,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
   },
   TUBO_VIDRIO: {
     category: "TUBOS_QUEMADORES",
-    name: "TUBO_VIDRIO",
+    name: "Tubo quemador de Vidrio",
     imageSrcs: [TUBOQUEMADOR_VIDRIO],
     price: 14000,
     description: `Tubo quemador de vidrio.
@@ -584,7 +528,7 @@ Lavable, Reutilizable.`,
   },
   TUBOS_DESCARTABLES_NARANJA: {
     category: "TUBOS_QUEMADORES",
-    name: "TUBOS_DESCARTABLES_NARANJA",
+    name: "Tubos quemadores descartables naranjas",
     imageSrcs: [TUBOQUEMADOR_DESCARTABLE_NARANJA],
     price: 5000,
     description: `El precio es por tres tubos quemadores descartables.
@@ -598,7 +542,7 @@ Para usuarios recurrentes, recomendado adquirir el tubo quemador de vidrio.`,
   },
   TUBOS_DESCARTABLES_ROJO: {
     category: "TUBOS_QUEMADORES",
-    name: "TUBOS_DESCARTABLES_ROJO",
+    name: "Tubos quemadores descartables rojos",
     imageSrcs: [TUBOQUEMADOR_DESCARTABLE_ROJO],
     price: 5000,
     description: `El precio es por tres tubos quemadores descartables.
@@ -612,7 +556,7 @@ Para usuarios recurrentes, recomendado adquirir el tubo quemador de vidrio.`,
   },
   TUBOS_DESCARTABLES_ROSA: {
     category: "TUBOS_QUEMADORES",
-    name: "TUBOS_DESCARTABLES_ROSA",
+    name: "Tubos quemadores descartables rosas",
     imageSrcs: [TUBOQUEMADOR_DESCARTABLE_ROSA],
     price: 5000,
     description: `El precio es por tres tubos quemadores descartables.
@@ -626,7 +570,7 @@ Para usuarios recurrentes, recomendado adquirir el tubo quemador de vidrio.`,
   },
   TUBOS_DESCARTABLES_VERDE: {
     category: "TUBOS_QUEMADORES",
-    name: "TUBOS_DESCARTABLES_VERDE",
+    name: "Tubos quemadores descartables verdes",
     imageSrcs: [TUBOQUEMADOR_DESCARTABLE_VERDE],
     price: 5000,
     description: `El precio es por tres tubos quemadores descartables.
@@ -640,7 +584,7 @@ Para usuarios recurrentes, recomendado adquirir el tubo quemador de vidrio.`,
   },
   DIAMOND_AMARILLO: {
     category: "CAZUELAS",
-    name: "DIAMOND_AMARILLO",
+    name: "Cazuela Diamante Amarillo",
     imageSrcs: [CAZUELA_DIAMOND_AMARILLO],
     price: 15000,
     description: `Cazuela diamante de vidrio Amarillo`,
@@ -648,7 +592,7 @@ Para usuarios recurrentes, recomendado adquirir el tubo quemador de vidrio.`,
   },
   CAZUELA_DIAMOND_AZUL: {
     category: "CAZUELAS",
-    name: "CAZUELA_DIAMOND_AZUL",
+    name: "Cazuela Diamante Azul",
     imageSrcs: [CAZUELA_DIAMOND_AZUL],
     price: 15000,
     description: `Cazuela diamante de vidrio Azul`,
@@ -656,7 +600,7 @@ Para usuarios recurrentes, recomendado adquirir el tubo quemador de vidrio.`,
   },
   CAZUELA_DIAMOND_TRANSPARENTE: {
     category: "CAZUELAS",
-    name: "CAZUELA_DIAMOND_TRANSPARENTE",
+    name: "Cazuela Diamante Transparente",
     imageSrcs: [CAZUELA_DIAMOND_TRANSPARENTE],
     price: 15000,
     description: `Cazuela diamante de vidrio Transparente`,
@@ -664,7 +608,7 @@ Para usuarios recurrentes, recomendado adquirir el tubo quemador de vidrio.`,
   },
   CAZUELA_DIAMOND_VERDE: {
     category: "CAZUELAS",
-    name: "CAZUELA_DIAMOND_VERDE",
+    name: "Cazuela Diamante Verde",
     imageSrcs: [CAZUELA_DIAMOND_VERDE],
     price: 15000,
     description: `Cazuela diamante de vidrio Verde`,
@@ -672,7 +616,7 @@ Para usuarios recurrentes, recomendado adquirir el tubo quemador de vidrio.`,
   },
   CAZUELA_ESFERICA_TRANSPARENTE: {
     category: "CAZUELAS",
-    name: "CAZUELA_ESFERICA_TRANSPARENTE",
+    name: "Cazuela Esferica Transparente",
     imageSrcs: [CAZUELA_ESFERICA_TRANSPARENTE],
     price: 15000,
     description: `Cazuela de vidrio esférica transparente`,
@@ -680,7 +624,7 @@ Para usuarios recurrentes, recomendado adquirir el tubo quemador de vidrio.`,
   },
   CAZUELA_ESFERICA_VERDE: {
     category: "CAZUELAS",
-    name: "CAZUELA_ESFERICA_VERDE",
+    name: "Cazuela Esferica Verde",
     imageSrcs: [CAZUELA_ESFERICA_VERDE],
     price: 15000,
     description: `Cazuela de vidrio esférica verde`,
@@ -688,7 +632,7 @@ Para usuarios recurrentes, recomendado adquirir el tubo quemador de vidrio.`,
   },
   CAZUELA_HEMBRA: {
     category: "CAZUELAS",
-    name: "CAZUELA_HEMBRA",
+    name: "Cazuela Hembra",
     imageSrcs: [CAZUELA_HEMBRA],
     price: 15000,
     description: `Cazuela de vidrio hembra`,
@@ -696,7 +640,7 @@ Para usuarios recurrentes, recomendado adquirir el tubo quemador de vidrio.`,
   },
   CAZUELA_TRADICIONAL: {
     category: "CAZUELAS",
-    name: "CAZUELA_TRADICIONAL",
+    name: "Cazuela Tradicional",
     imageSrcs: [CAZUELA_TRADICIONAL],
     price: 15000,
     description: `Cazuela de vidrio tradicional`,
@@ -704,7 +648,7 @@ Para usuarios recurrentes, recomendado adquirir el tubo quemador de vidrio.`,
   },
   ADAPTADOR_HEMBRA_MACHO: {
     category: "ACCESORIOS",
-    name: "ADAPTADOR_HEMBRA_MACHO",
+    name: "Adaptador Hembra Macho",
     imageSrcs: [ACC_ADAPTADOR_HEMBRA_MACHO],
     price: 2000,
     description: `El precio es por cuatro adaptadores.
@@ -718,7 +662,7 @@ Duración: 10 sesiones o 1 mes; lo que suceda primero.`,
   },
   FILTROS: {
     category: "ACCESORIOS",
-    name: "FILTROS",
+    name: "Filtros de metal",
     imageSrcs: [ACC_FILTRO_1, ACC_FILTRO_2],
     price: 2200,
     description: `15 unidades de filtros (3 paquetes de 5) de metal para los tubos quemadores.`,
@@ -726,7 +670,7 @@ Duración: 10 sesiones o 1 mes; lo que suceda primero.`,
   },
   FRASCO_63: {
     category: "ACCESORIOS",
-    name: "FRASCO_63",
+    name: "Frasco para tapa 63mm",
     imageSrcs: [ACC_FRASCO_63],
     price: 1500,
     description: `Frasco de vidrio con tapa de 63mm`,
@@ -734,7 +678,7 @@ Duración: 10 sesiones o 1 mes; lo que suceda primero.`,
   },
   FRASCO_70: {
     category: "ACCESORIOS",
-    name: "FRASCO_70",
+    name: "Frasco para tapa 70mm",
     imageSrcs: [ACC_FRASCO_70],
     price: 2000,
     description: `Frasco de vidrio con tapa de 70mm`,
@@ -742,7 +686,7 @@ Duración: 10 sesiones o 1 mes; lo que suceda primero.`,
   },
   ORINGS_TAPA63: {
     category: "ACCESORIOS",
-    name: "ORINGS_TAPA63",
+    name: "Orings para tapa 63mm",
     imageSrcs: [ACC_ORINGS_TAPA63],
     price: 2000,
     description: `5 Orings para tapa de 63mm`,
@@ -750,7 +694,7 @@ Duración: 10 sesiones o 1 mes; lo que suceda primero.`,
   },
   ORINGS_TAPA70: {
     category: "ACCESORIOS",
-    name: "ORINGS_TAPA70",
+    name: "Orings para tapa 70mm",
     imageSrcs: [ACC_ORINGS_TAPA70],
     price: 2000,
     description: `5 Orings para tapa de 70mm`,
@@ -758,7 +702,7 @@ Duración: 10 sesiones o 1 mes; lo que suceda primero.`,
   },
   PORTACIGARRO_NARANJA: {
     category: "ACCESORIOS",
-    name: "PORTACIGARRO_NARANJA",
+    name: "Portacigarro Naranja",
     imageSrcs: [ACC_PORTACIGARRO_NARANJA],
     price: 1500,
     description: `Porta cigarros naranja`,
@@ -766,7 +710,7 @@ Duración: 10 sesiones o 1 mes; lo que suceda primero.`,
   },
   PORTACIGARRO_ROJO_AZUL: {
     category: "ACCESORIOS",
-    name: "PORTACIGARRO_ROJO_AZUL",
+    name: "Portacigarro RojoAzul",
     imageSrcs: [ACC_PORTACIGARRO_ROJO_AZUL],
     price: 1500,
     description: `Porta cigarros rojo y azul`,
@@ -774,7 +718,7 @@ Duración: 10 sesiones o 1 mes; lo que suceda primero.`,
   },
   PORTACIGARRO_ROSA: {
     category: "ACCESORIOS",
-    name: "PORTACIGARRO_ROSA",
+    name: "Portacigarro Rosa",
     imageSrcs: [ACC_PORTACIGARRO_ROSA],
     price: 1500,
     description: `Porta cigarros rosa`,
@@ -782,7 +726,7 @@ Duración: 10 sesiones o 1 mes; lo que suceda primero.`,
   },
   PORTACIGARRO_VERDE: {
     category: "ACCESORIOS",
-    name: "PORTACIGARRO_VERDE",
+    name: "Portacigarro Verde",
     imageSrcs: [ACC_PORTACIGARRO_VERDE],
     price: 1500,
     description: `Porta cigarros verde`,
@@ -798,10 +742,10 @@ Duración: 10 sesiones o 1 mes; lo que suceda primero.`,
   },
   CARPINCHO_1: {
     category: "DECORACION",
-    name: "CARPINCHO_1",
+    name: "CAPYBARA",
     imageSrcs: [DEC_CARPINCHO_1, DEC_CARPINCHO_2],
     price: 4000,
-    description: `Muñeco Carpincho pintado a mano`,
+    description: `Muñeco de Carpincho pintado a mano`,
     stock: 1,
   },
   CHARMANDER: {
@@ -825,7 +769,7 @@ Precio por el creeper grande: $8000`,
   },
   DARK_BULBASAUR: {
     category: "DECORACION",
-    name: "DARK_BULBASAUR",
+    name: "DARK BULBASAUR",
     imageSrcs: [DEC_DARK_BULBASAUR_1, DEC_DARK_BULBASAUR_2],
     price: 15000,
     description: `Muñeco Pokemon de Dark Bulbasaur pintado a mano`,
@@ -849,7 +793,7 @@ Precio por el creeper grande: $8000`,
   },
   MILEI_MOTOSIERRA: {
     category: "DECORACION",
-    name: "MILEI_MOTOSIERRA",
+    name: "MILEI MOTOSIERRA",
     imageSrcs: [
       DEC_MILEI_MOTOSIERRA_1,
       DEC_MILEI_MOTOSIERRA_2,
@@ -880,7 +824,7 @@ VLLC!`,
   },
   PERRITO_MARRON: {
     category: "DECORACION",
-    name: "PERRITO_MARRON",
+    name: "Perrito Marron",
     imageSrcs: [DEC_PERRITO_MARRON_1, DEC_PERRITO_MARRON_2],
     price: 6000,
     description: `Muñeco de un Perrito Marron pintado a mano`,
@@ -904,7 +848,7 @@ VLLC!`,
   },
   TIBURON_ARTICULADO: {
     category: "DECORACION",
-    name: "TIBURON_ARTICULADO",
+    name: "Tiburon Articulado",
     imageSrcs: [
       DEC_TIBURON_ARTICULADO_1,
       DEC_TIBURON_ARTICULADO_2,
@@ -916,9 +860,13 @@ VLLC!`,
   },
 };
 
-export const allItems = Object.entries(PRODUCTOS).map(([key, item]) => {
-  return {
-    ...item,
-    key,
-  };
-});
+export const allItems = Object.entries(PRODUCTOS)
+  .map(([key, item]) => {
+    if (item.stock === 0) return null;
+
+    return {
+      ...item,
+      key,
+    };
+  })
+  .filter((item) => item !== null);

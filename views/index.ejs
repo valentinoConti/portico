@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Manager</title>
+    <title>Productos Portico</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -36,7 +36,7 @@
         border-radius: 4px;
       }
       textarea {
-        height: 300px;
+        height: 150px;
       }
       button {
         background-color: #3498db;
@@ -83,6 +83,75 @@
         margin-top: 10px;
         font-weight: bold;
       }
+      .filter-form {
+        margin-bottom: 20px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+      .filter-form select, .filter-form input[type="checkbox"] {
+        padding: 8px;
+        font-size: 16px;
+      }
+      .filter-form label {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .filters-section {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      .filters-section h3 {
+        margin-top: 0;
+        margin-bottom: 15px;
+        color: #2c3e50;
+      }
+      .filters-form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .filter-group {
+        display: flex;
+        flex-direction: column;
+      }
+      .filter-group label {
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #34495e;
+      }
+      .filter-group select {
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #bdc3c7;
+        font-size: 14px;
+      }
+      .checkbox-group {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .checkbox-group input[type="checkbox"] {
+        margin: 0;
+      }
+      .apply-filters-btn {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .apply-filters-btn:hover {
+        background-color: #2980b9;
+      }
     </style>
   </head>
   <body>
@@ -123,9 +192,30 @@
     </div>
 
     <h2>Lista de Productos</h2>
+    <div class="filters-section">
+      <h3>Filtros de Productos</h3>
+      <form class="filters-form" action="/" method="GET">
+        <div class="filter-group">
+          <label for="category-filter">Categoría:</label>
+          <select id="category-filter" name="category">
+            <option value="all" <%= selectedCategory === 'all' ? 'selected' : '' %>>Todas las categorías</option>
+            <% categories.forEach(category => { %>
+              <option value="<%= category %>" <%= selectedCategory === category ? 'selected' : '' %>><%= category %></option>
+            <% }); %>
+          </select>
+        </div>
+        
+        <div class="checkbox-group">
+          <input type="checkbox" id="zero-stock" name="zeroStock" value="true" <%= showZeroStock ? 'checked' : '' %>>
+          <label for="zero-stock">Mostrar solo productos sin stock</label>
+        </div>
+        
+        <button type="submit" class="apply-filters-btn">Aplicar Filtros</button>
+      </form>
+    </div>
     <div class="product-list">
       <% products.forEach(product => { %>
-      <div class="product-item">
+      <div id="<%= product.id %>" class="product-item">
         <h3><%= product.name %></h3>
         <% if (product.imageSrc) { %>
         <img

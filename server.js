@@ -48,7 +48,27 @@ const productsFile = path.join(
 
 app.get("/", (req, res) => {
   const products = getProducts();
-  res.render("index", { products });
+  const categories = [...new Set(products.map((product) => product.category))];
+  const selectedCategory = req.query.category || "all";
+  const showZeroStock = req.query.zeroStock === "true";
+
+  let filteredProducts =
+    selectedCategory === "all"
+      ? products
+      : products.filter((product) => product.category === selectedCategory);
+
+  if (showZeroStock) {
+    filteredProducts = filteredProducts.filter(
+      (product) => product.stock === 0
+    );
+  }
+
+  res.render("index", {
+    products: filteredProducts,
+    categories,
+    selectedCategory,
+    showZeroStock,
+  });
 });
 
 app.post("/add-product", upload.array("images"), async (req, res) => {
@@ -68,7 +88,7 @@ app.post("/add-product", upload.array("images"), async (req, res) => {
 app.post("/update-product", (req, res) => {
   const { id, name, price, description, stock, category } = req.body;
   updateProduct(id, name, price, description, stock, category);
-  res.redirect("/");
+  res.redirect(`/#${id}`); // Redirect to the specific product
 });
 
 app.post("/remove-product", (req, res) => {
