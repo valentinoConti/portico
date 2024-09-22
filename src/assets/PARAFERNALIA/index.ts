@@ -145,6 +145,63 @@ export interface Item {
 
 // File generated from server.js
 export const PRODUCTOS: Record<string, Item> = {
+  COMBO_ROCKIE_SHOOTER_NARANJA_1: {
+    category: "COMBOS",
+    price: 30000,
+    description: "COMBO_ROCKIE_SHOOTER_NARANJA_1",
+    stock: 1,
+    name: "Bong Combo Rockie Shooter Naranja",
+    imageSrcs: [COMBO_ROCKIE_SHOOTER_NARANJA_1, COMBO_ROCKIE_SHOOTER_NARANJA_2],
+  },
+  COMBO_ROCKIE_SHOOTER_PINTADO_1: {
+    category: "COMBOS",
+    price: 30000,
+    description: "COMBO_ROCKIE_SHOOTER_PINTADO_1",
+    stock: 1,
+    imageSrcs: [COMBO_ROCKIE_SHOOTER_PINTADO_1, COMBO_ROCKIE_SHOOTER_PINTADO_2],
+    name: "Bong Combo Rockie Shooter Pintado",
+  },
+  COMBO_LARRY_DIZZY_ROJO_1: {
+    category: "COMBOS",
+    price: 30000,
+    description: "COMBO_LARRY_DIZZY_ROJO_1",
+    stock: 1,
+    name: "Bong Combo Larry Dizzy Rojo",
+    imageSrcs: [COMBO_LARRY_DIZZY_ROJO_1, COMBO_LARRY_DIZZY_ROJO_2],
+  },
+  COMBO_LARRY_GROGUI_NARANJA_1: {
+    category: "COMBOS",
+    price: 30000,
+    description: "COMBO_LARRY_GROGUI_NARANJA_1",
+    stock: 1,
+    name: "Bong Combo Larry Grogui Naranja",
+    imageSrcs: [COMBO_LARRY_GROGUI_NARANJA_1, COMBO_LARRY_GROGUI_NARANJA_2],
+  },
+  COMBO_LARRY_GROGUI_ROSA_1: {
+    category: "COMBOS",
+    price: 30000,
+    description: "COMBO_LARRY_GROGUI_ROSA_1",
+    stock: 1,
+    name: "Bong Combo Larry Grogui Rosa",
+    imageSrcs: [COMBO_LARRY_GROGUI_ROSA_1, COMBO_LARRY_GROGUI_ROSA_2],
+  },
+  COMBO_ROCKIE_DIZZY_NARANJA_1: {
+    category: "COMBOS",
+    price: 30000,
+    description: "COMBO_ROCKIE_DIZZY_NARANJA_1",
+    stock: 1,
+    name: "Bong Combo Rockie Dizzy Naranja",
+    imageSrcs: [COMBO_ROCKIE_DIZZY_NARANJA_1, COMBO_ROCKIE_DIZZY_NARANJA_2],
+  },
+  COMBO_ROCKIE_GROGUI_ROJO_1: {
+    category: "COMBOS",
+    price: 30000,
+    description: "COMBO_ROCKIE_GROGUI_ROJO_1",
+    stock: 1,
+    name: "Bong Combo Rockie Grogui Rojo",
+    imageSrcs: [COMBO_ROCKIE_GROGUI_ROJO_1, COMBO_ROCKIE_GROGUI_ROJO_2],
+  },
+
   ECONOMICO_VERDE_63: {
     category: "COMBOS",
     name: "Bong Combo Económico Verde 63",
@@ -193,48 +250,7 @@ export const PRODUCTOS: Record<string, Item> = {
 - 5 Filtros de metal.`,
     stock: 1,
   },
-  LARRY_DIZZY_ROJO: {
-    category: "TUBOS",
-    name: "Tubo Dizzy Rojo",
-    imageSrcs: [COMBO_LARRY_DIZZY_ROJO_1, COMBO_LARRY_DIZZY_ROJO_2],
-    price: 15000,
-    description: `Tubo con rosca para conectar sobre cualquier tapa`,
-    stock: 1,
-  },
-  LARRY_GROGUI_NARANJA: {
-    category: "TUBOS",
-    name: "Tubo Grogui Naranja",
-    imageSrcs: [COMBO_LARRY_GROGUI_NARANJA_1, COMBO_LARRY_GROGUI_NARANJA_2],
-    price: 15000,
-    description: `Tubo con rosca para conectar sobre cualquier tapa`,
-    stock: 1,
-  },
-  LARRY_GROGUI_ROSA: {
-    category: "TUBOS",
-    name: "Tubo Grogui Rosa",
-    imageSrcs: [COMBO_LARRY_GROGUI_ROSA_1, COMBO_LARRY_GROGUI_ROSA_2],
-    price: 15000,
-    description: `Tubo con rosca para conectar sobre cualquier tapa`,
-    stock: 1,
-  },
 
-  ROCKIE_DIZZY_NARANJA: {
-    category: "TUBOS",
-    name: "Tubo Dizzy Naranja",
-    imageSrcs: [COMBO_ROCKIE_DIZZY_NARANJA_1, COMBO_ROCKIE_DIZZY_NARANJA_2],
-    price: 15000,
-    description: `Tubo con rosca para conectar sobre cualquier tapa`,
-    stock: 1,
-  },
-
-  ROCKIE_GROGUI_ROJO: {
-    category: "TUBOS",
-    name: "Tubo Grogui Rojo",
-    imageSrcs: [COMBO_ROCKIE_GROGUI_ROJO_1, COMBO_ROCKIE_GROGUI_ROJO_2],
-    price: 15000,
-    description: `Tubo con rosca para conectar sobre cualquier tapa`,
-    stock: 1,
-  },
   ROCKIE_GROGUI_ROSA_ROSACLARO: {
     category: "COMBOS",
     name: "Bong Combo Rockie Grogui Rosas",
@@ -252,22 +268,6 @@ export const PRODUCTOS: Record<string, Item> = {
 - 1 Tubo quemador de vidrio.
 - 3 Orings para la tapa.
 - 5 Filtros de metal.`,
-    stock: 1,
-  },
-  ROCKIE_SHOOTER_NARANJA: {
-    category: "TUBOS",
-    name: "Tubo Shooter Naranja",
-    imageSrcs: [COMBO_ROCKIE_SHOOTER_NARANJA_1, COMBO_ROCKIE_SHOOTER_NARANJA_2],
-    price: 9000,
-    description: `Tubo con rosca para conectar sobre cualquier tapa`,
-    stock: 1,
-  },
-  ROCKIE_SHOOTER_PINTADO: {
-    category: "TUBOS",
-    name: "Tubo Shooter Pintado",
-    imageSrcs: [COMBO_ROCKIE_SHOOTER_PINTADO_1, COMBO_ROCKIE_SHOOTER_PINTADO_2],
-    price: 15000,
-    description: `Tubo con rosca para conectar sobre cualquier tapa`,
     stock: 1,
   },
   LARRY_GROGUI_SHINY: {
@@ -666,7 +666,7 @@ Duración: 10 sesiones o 1 mes; lo que suceda primero.`,
     imageSrcs: [ACC_FILTRO_1, ACC_FILTRO_2],
     price: 2200,
     description: `15 unidades de filtros (3 paquetes de 5) de metal para los tubos quemadores.`,
-    stock: 1,
+    stock: 10,
   },
   FRASCO_63: {
     category: "ACCESORIOS",
