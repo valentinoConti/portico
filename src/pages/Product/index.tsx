@@ -11,8 +11,8 @@ import { useParams } from "react-router-dom";
 import { allItems, Item } from "src/assets/PARAFERNALIA";
 import { toCurrency } from "src/utils/string";
 import { Footer, Header, ItemImage } from "src/components";
-import "./styles.scss";
 import { ShoppingCartIcon } from "src/icons";
+import "./styles.scss";
 
 const Product = () => {
   const params = useParams();
@@ -33,6 +33,48 @@ const Product = () => {
   const handleContinueShopping = () => {
     navigate(-1);
   };
+
+  if (!item) {
+    return (
+      <div>
+        <div className="product">
+          <Header showBackButton />
+          <div className="product-content">
+            <div className="product-content-container">
+              <div
+                className="product-info"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <h2>Producto no encontrado</h2>
+
+                <p>Tal vez el producto que buscas ya no está disponible.</p>
+                <p>
+                  <button
+                    style={{
+                      backgroundColor: "var(--color-primary-200)",
+                      color: "white",
+                      padding: "10px 20px",
+                      borderRadius: "5px",
+                      border: "none",
+                      cursor: "pointer",
+                    }}
+                    onClick={() => navigate("/store")}
+                  >
+                    Ir a la Tienda
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <Footer />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="product">

@@ -51,6 +51,7 @@ app.get("/", (req, res) => {
   const categories = [...new Set(products.map((product) => product.category))];
   const selectedCategory = req.query.category || "all";
   const showZeroStock = req.query.zeroStock === "true";
+  const showOnlyStock = req.query.onlyStock === "true";
 
   let filteredProducts =
     selectedCategory === "all"
@@ -63,11 +64,16 @@ app.get("/", (req, res) => {
     );
   }
 
+  if (showOnlyStock) {
+    filteredProducts = filteredProducts.filter((product) => product.stock > 0);
+  }
+
   res.render("index", {
     products: filteredProducts,
     categories,
     selectedCategory,
     showZeroStock,
+    showOnlyStock,
   });
 });
 
@@ -88,7 +94,23 @@ app.post("/add-product", upload.array("images"), async (req, res) => {
 app.post("/update-product", (req, res) => {
   const { id, name, price, description, stock, category } = req.body;
   updateProduct(id, name, price, description, stock, category);
-  res.redirect(`/#${id}`); // Redirect to the specific product
+
+  // Preserve existing query parameters
+  const currentUrl = new URL(
+    req.headers.referer || "/",
+    `http://${req.headers.host}`
+  );
+  const searchParams = currentUrl.searchParams;
+
+  // Update or add the category parameter if it exists in the updated product
+  if (category) {
+    searchParams.set("category", category);
+  }
+
+  // Construct the redirect URL with preserved query parameters
+  const redirectUrl = `/${currentUrl.search}#${id}`;
+
+  res.redirect(redirectUrl); // Redirect to the specific product
 });
 
 app.post("/remove-product", (req, res) => {

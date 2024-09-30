@@ -209,6 +209,11 @@
           <input type="checkbox" id="zero-stock" name="zeroStock" value="true" <%= showZeroStock ? 'checked' : '' %>>
           <label for="zero-stock">Mostrar solo productos sin stock</label>
         </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="only-stock" name="onlyStock" value="true" <%= showOnlyStock ? 'checked' : '' %>>
+          <label for="only-stock">Mostrar solo productos con stock</label>
+        </div>
         
         <button type="submit" class="apply-filters-btn">Aplicar Filtros</button>
       </form>

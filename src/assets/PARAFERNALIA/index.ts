@@ -148,7 +148,15 @@ export const PRODUCTOS: Record<string, Item> = {
   COMBO_ROCKIE_SHOOTER_NARANJA_1: {
     category: "COMBOS",
     price: 30000,
-    description: `COMBO_ROCKIE_SHOOTER_NARANJA_1`,
+    description: `Los combos incluyen:
+
+- 1 Tubo.
+- 1 Tapa.
+- 1 Frasco.
+- 1 Cazuela de vidrio.
+- 1 Tubo quemador de vidrio.
+- 3 Orings para la tapa.
+- 5 Filtros de metal.`,
     stock: 1,
     name: "Bong Combo Rockie Shooter Naranja",
     imageSrcs: [COMBO_ROCKIE_SHOOTER_NARANJA_1, COMBO_ROCKIE_SHOOTER_NARANJA_2],
@@ -156,7 +164,15 @@ export const PRODUCTOS: Record<string, Item> = {
   COMBO_ROCKIE_SHOOTER_PINTADO_1: {
     category: "COMBOS",
     price: 30000,
-    description: `COMBO_ROCKIE_SHOOTER_PINTADO_1`,
+    description: `Los combos incluyen:
+
+- 1 Tubo.
+- 1 Tapa.
+- 1 Frasco.
+- 1 Cazuela de vidrio.
+- 1 Tubo quemador de vidrio.
+- 3 Orings para la tapa.
+- 5 Filtros de metal.`,
     stock: 1,
     imageSrcs: [COMBO_ROCKIE_SHOOTER_PINTADO_1, COMBO_ROCKIE_SHOOTER_PINTADO_2],
     name: "Bong Combo Rockie Shooter Pintado",
@@ -164,7 +180,15 @@ export const PRODUCTOS: Record<string, Item> = {
   COMBO_LARRY_DIZZY_ROJO_1: {
     category: "COMBOS",
     price: 30000,
-    description: `COMBO_LARRY_DIZZY_ROJO_1`,
+    description: `Los combos incluyen:
+
+- 1 Tubo.
+- 1 Tapa.
+- 1 Frasco.
+- 1 Cazuela de vidrio.
+- 1 Tubo quemador de vidrio.
+- 3 Orings para la tapa.
+- 5 Filtros de metal.`,
     stock: 1,
     name: "Bong Combo Larry Dizzy Rojo",
     imageSrcs: [COMBO_LARRY_DIZZY_ROJO_1, COMBO_LARRY_DIZZY_ROJO_2],
@@ -172,7 +196,15 @@ export const PRODUCTOS: Record<string, Item> = {
   COMBO_LARRY_GROGUI_NARANJA_1: {
     category: "COMBOS",
     price: 30000,
-    description: `COMBO_LARRY_GROGUI_NARANJA_1`,
+    description: `Los combos incluyen:
+
+- 1 Tubo.
+- 1 Tapa.
+- 1 Frasco.
+- 1 Cazuela de vidrio.
+- 1 Tubo quemador de vidrio.
+- 3 Orings para la tapa.
+- 5 Filtros de metal.`,
     stock: 1,
     name: "Bong Combo Larry Grogui Naranja",
     imageSrcs: [COMBO_LARRY_GROGUI_NARANJA_1, COMBO_LARRY_GROGUI_NARANJA_2],
@@ -180,15 +212,31 @@ export const PRODUCTOS: Record<string, Item> = {
   COMBO_LARRY_GROGUI_ROSA_1: {
     category: "COMBOS",
     price: 30000,
-    description: `COMBO_LARRY_GROGUI_ROSA_1`,
+    description: `Los combos incluyen:
+
+- 1 Tubo.
+- 1 Tapa.
+- 1 Frasco.
+- 1 Cazuela de vidrio.
+- 1 Tubo quemador de vidrio.
+- 3 Orings para la tapa.
+- 5 Filtros de metal.`,
     stock: 1,
     name: "Bong Combo Larry Grogui Rosa",
     imageSrcs: [COMBO_LARRY_GROGUI_ROSA_1, COMBO_LARRY_GROGUI_ROSA_2],
   },
   COMBO_ROCKIE_DIZZY_NARANJA_1: {
     category: "COMBOS",
-    price: 30000,
-    description: `COMBO_ROCKIE_DIZZY_NARANJA_1`,
+    price: 40000,
+    description: `Los combos incluyen:
+
+- 1 Tubo.
+- 1 Tapa.
+- 1 Frasco.
+- 1 Cazuela de vidrio.
+- 1 Tubo quemador de vidrio.
+- 3 Orings para la tapa.
+- 5 Filtros de metal.`,
     stock: 1,
     name: "Bong Combo Rockie Dizzy Naranja",
     imageSrcs: [COMBO_ROCKIE_DIZZY_NARANJA_1, COMBO_ROCKIE_DIZZY_NARANJA_2],
@@ -196,7 +244,15 @@ export const PRODUCTOS: Record<string, Item> = {
   COMBO_ROCKIE_GROGUI_ROJO_1: {
     category: "COMBOS",
     price: 30000,
-    description: `COMBO_ROCKIE_GROGUI_ROJO_1`,
+    description: `Los combos incluyen:
+
+- 1 Tubo.
+- 1 Tapa.
+- 1 Frasco.
+- 1 Cazuela de vidrio.
+- 1 Tubo quemador de vidrio.
+- 3 Orings para la tapa.
+- 5 Filtros de metal.`,
     stock: 1,
     name: "Bong Combo Rockie Grogui Rojo",
     imageSrcs: [COMBO_ROCKIE_GROGUI_ROJO_1, COMBO_ROCKIE_GROGUI_ROJO_2],
@@ -268,7 +324,7 @@ export const PRODUCTOS: Record<string, Item> = {
 - 1 Tubo quemador de vidrio.
 - 3 Orings para la tapa.
 - 5 Filtros de metal.`,
-    stock: 1,
+    stock: 0,
   },
   LARRY_GROGUI_SHINY: {
     category: "COMBOS",
@@ -370,7 +426,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
     imageSrcs: [TUBO_GROGUI_ROSACLARO_1, TUBO_GROGUI_ROSACLARO_2],
     price: 15000,
     description: `Tubo con rosca para conectar sobre cualquier tapa`,
-    stock: 1,
+    stock: 0,
   },
   GROGUI_ROSA: {
     category: "TUBOS",
