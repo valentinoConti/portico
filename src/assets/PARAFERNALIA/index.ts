@@ -29,6 +29,9 @@ import IMG_9647 from "./resized/IMG_9647.webp";
 import IMG_9648 from "./resized/IMG_9648.webp";
 import IMG_9649 from "./resized/IMG_9649.webp";
 import IMG_9650 from "./resized/IMG_9650.webp";
+import IMG_9654 from "./resized/IMG_9654.webp";
+import IMG_9655 from "./resized/IMG_9655.webp";
+import IMG_9656 from "./resized/IMG_9656.webp";
 
 import CAZUELA_DIAMOND_AMARILLO from "./resized/CAZUELA_DIAMOND_AMARILLO.webp";
 import CAZUELA_DIAMOND_AZUL from "./resized/CAZUELA_DIAMOND_AZUL.webp";
@@ -165,6 +168,24 @@ export interface Item {
 
 // File generated from server.js
 export const PRODUCTOS: Record<string, Item> = {
+
+  PICADOR_NEGRO_Y_ROJO: {
+    name: "Picador Negro y Rojo",
+    imageSrcs: [IMG_9655, IMG_9656],
+    price: 6500,
+    description: `Picador negro y rojo`,
+    stock: 1,
+    category: "ACCESORIOS",
+  },
+
+  PORTACIGARRO_ROJO: {
+    name: "Portacigarro Rojo",
+    imageSrcs: [IMG_9654],
+    price: 1500,
+    description: `Porta cigarros rojo`,
+    stock: 1,
+    category: "ACCESORIOS",
+  },
 
   BONG_COMBO_MOLLIE_HALLOWEEN: {
     name: "Bong Combo Mollie Halloween",
