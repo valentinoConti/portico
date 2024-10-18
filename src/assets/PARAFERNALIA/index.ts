@@ -9,6 +9,26 @@ import ACC_PORTACIGARRO_NARANJA from "./resized/ACC_PORTACIGARRO_NARANJA.webp";
 import ACC_PORTACIGARRO_ROJO_AZUL from "./resized/ACC_PORTACIGARRO_ROJO_AZUL.webp";
 import ACC_PORTACIGARRO_ROSA from "./resized/ACC_PORTACIGARRO_ROSA.webp";
 import ACC_PORTACIGARRO_VERDE from "./resized/ACC_PORTACIGARRO_VERDE.webp";
+import IMG_9629 from "./resized/IMG_9629.webp";
+import IMG_9630 from "./resized/IMG_9630.webp";
+import IMG_9631 from "./resized/IMG_9631.webp";
+import IMG_9632 from "./resized/IMG_9632.webp";
+import IMG_9633 from "./resized/IMG_9633.webp";
+import IMG_9637 from "./resized/IMG_9637.webp";
+import IMG_9635 from "./resized/IMG_9635.webp";
+import IMG_9636 from "./resized/IMG_9636.webp";
+import IMG_9638 from "./resized/IMG_9638.webp";
+import IMG_9639 from "./resized/IMG_9639.webp";
+import IMG_9640 from "./resized/IMG_9640.webp";
+import IMG_9641 from "./resized/IMG_9641.webp";
+import IMG_9642 from "./resized/IMG_9642.webp";
+import IMG_9643 from "./resized/IMG_9643.webp";
+import IMG_9644 from "./resized/IMG_9644.webp";
+import IMG_9645 from "./resized/IMG_9645.webp";
+import IMG_9647 from "./resized/IMG_9647.webp";
+import IMG_9648 from "./resized/IMG_9648.webp";
+import IMG_9649 from "./resized/IMG_9649.webp";
+import IMG_9650 from "./resized/IMG_9650.webp";
 
 import CAZUELA_DIAMOND_AMARILLO from "./resized/CAZUELA_DIAMOND_AMARILLO.webp";
 import CAZUELA_DIAMOND_AZUL from "./resized/CAZUELA_DIAMOND_AZUL.webp";
@@ -145,9 +165,132 @@ export interface Item {
 
 // File generated from server.js
 export const PRODUCTOS: Record<string, Item> = {
+
+  BONG_COMBO_MOLLIE_HALLOWEEN: {
+    name: "Bong Combo Mollie Halloween",
+    imageSrcs: [IMG_9649, IMG_9650],
+    price: 37500,
+    description: `Los combos incluyen:
+
+- 1 Tubo.
+- 1 Tapa.
+- 1 Frasco.
+- 1 Cazuela de vidrio.
+- 1 Tubo quemador de vidrio.
+- 3 Orings para la tapa.
+- 5 Filtros de metal.`,
+    stock: 1,
+    category: "COMBOS",
+  },
+
+  BONG_COMBO_LEXOR_HALLOWEEN_ROSA: {
+    name: "Bong Combo Lexor Halloween rosa",
+    imageSrcs: [IMG_9647, IMG_9648],
+    price: 40000,
+    description: `Los combos incluyen:
+
+- 1 Tubo.
+- 1 Tapa.
+- 1 Frasco.
+- 1 Cazuela de vidrio.
+- 1 Tubo quemador de vidrio.
+- 3 Orings para la tapa.
+- 5 Filtros de metal.`,
+    stock: 1,
+    category: "COMBOS",
+  },
+
+  TUBO_HALLOWEEN_ROSA: {
+    name: "Tubo Halloween Rosa",
+    imageSrcs: [IMG_9644, IMG_9645],
+    price: 14000,
+    description: `Tubo con rosca para conectar sobre cualquier tapa`,
+    stock: 1,
+    category: "TUBOS",
+  },
+
+  TUBO_HALLOWEEN_NARANJA: {
+    name: "Tubo Halloween Naranja",
+    imageSrcs: [IMG_9642, IMG_9643],
+    price: 14000,
+    description: `Tubo con rosca para conectar sobre cualquier tapa`,
+    stock: 1,
+    category: "TUBOS",
+  },
+
+  TUBO_HALLOWEEN_ROJO: {
+    name: "Tubo Halloween Rojo",
+    imageSrcs: [IMG_9640, IMG_9641],
+    price: 14000,
+    description: `Tubo con rosca para conectar sobre cualquier tapa`,
+    stock: 1,
+    category: "TUBOS",
+  },
+
+  TAPA_LEXOR_NARANJA: {
+    name: "Tapa Lexor Naranja",
+    imageSrcs: [IMG_9638, IMG_9639],
+    price: 10000,
+    description: `Tapa para frasco de 70mm`,
+    stock: 1,
+    category: "TAPAS_70",
+  },
+
+  TAPA_LEXOR_ROJA: {
+    name: "Tapa Lexor Roja",
+    imageSrcs: [IMG_9635, IMG_9636],
+    price: 10000,
+    description: `Tapa para frasco de 70mm`,
+    stock: 1,
+    category: "TAPAS_70",
+  },
+
+  TAPA_LEXOR_ROSA: {
+    name: "Tapa Lexor Rosa",
+    imageSrcs: [IMG_9633, IMG_9637],
+    price: 10000,
+    description: `Tapa para frasco de 70mm`,
+    stock: 1,
+    category: "TAPAS_70",
+  },
+
+  TAPA_MOLLIE_VERDE: {
+    name: "Tapa Mollie Verde",
+    imageSrcs: [IMG_9632],
+    price: 8000,
+    description: `Tapa para frasco de 63mm`,
+    stock: 1,
+    category: "TAPAS_63",
+  },
+
+  TAPA_MOLLIE_ROSA: {
+    name: "Tapa Mollie Rosa",
+    imageSrcs: [IMG_9631],
+    price: 8000,
+    description: `Tapa para frasco de 63mm`,
+    stock: 1,
+    category: "TAPAS_63",
+  },
+  TAPA_MOLLIE_NARANJA: {
+    name: "Tapa Mollie Naranja",
+    imageSrcs: [IMG_9630],
+    price: 8000,
+    description: `Tapa para frasco de 63mm`,
+    stock: 1,
+    category: "TAPAS_63",
+  },
+
+  TAPA_MOLLIE_ROJA: {
+    name: "Tapa Mollie Roja",
+    imageSrcs: [IMG_9629],
+    price: 8000,
+    description: `Tapa para frasco de 63mm`,
+    stock: 2,
+    category: "TAPAS_63",
+  },
   COMBO_ROCKIE_SHOOTER_NARANJA_1: {
     category: "COMBOS",
-    price: 30000,
+    price: 25000,
     description: `Los combos incluyen:
 
 - 1 Tubo.
@@ -179,7 +322,7 @@ export const PRODUCTOS: Record<string, Item> = {
   },
   COMBO_LARRY_DIZZY_ROJO_1: {
     category: "COMBOS",
-    price: 30000,
+    price: 37000,
     description: `Los combos incluyen:
 
 - 1 Tubo.
@@ -195,7 +338,7 @@ export const PRODUCTOS: Record<string, Item> = {
   },
   COMBO_LARRY_GROGUI_NARANJA_1: {
     category: "COMBOS",
-    price: 30000,
+    price: 39000,
     description: `Los combos incluyen:
 
 - 1 Tubo.
@@ -211,7 +354,7 @@ export const PRODUCTOS: Record<string, Item> = {
   },
   COMBO_LARRY_GROGUI_ROSA_1: {
     category: "COMBOS",
-    price: 30000,
+    price: 39000,
     description: `Los combos incluyen:
 
 - 1 Tubo.
@@ -227,7 +370,7 @@ export const PRODUCTOS: Record<string, Item> = {
   },
   COMBO_ROCKIE_DIZZY_NARANJA_1: {
     category: "COMBOS",
-    price: 40000,
+    price: 34000,
     description: `Los combos incluyen:
 
 - 1 Tubo.
@@ -243,7 +386,7 @@ export const PRODUCTOS: Record<string, Item> = {
   },
   COMBO_ROCKIE_GROGUI_ROJO_1: {
     category: "COMBOS",
-    price: 30000,
+    price: 35000,
     description: `Los combos incluyen:
 
 - 1 Tubo.
@@ -262,7 +405,7 @@ export const PRODUCTOS: Record<string, Item> = {
     category: "COMBOS",
     name: "Bong Combo Económico Verde 63",
     imageSrcs: [COMBO_ECONOMICO_VERDE_63],
-    price: 16200,
+    price: 16000,
     description: `Los combos económicos incluyen:
 
 - 1 Tubo Shooter.
@@ -278,7 +421,7 @@ export const PRODUCTOS: Record<string, Item> = {
     category: "COMBOS",
     name: "Bong Combo Económico Azul 70",
     imageSrcs: [COMBO_ECONOMICO_AZUL_70],
-    price: 16000,
+    price: 20000,
     description: `Los combos económicos incluyen:
 
 - 1 Tubo Shooter.
@@ -294,7 +437,7 @@ export const PRODUCTOS: Record<string, Item> = {
     category: "COMBOS",
     name: "Bong Combo Económico Verde 70",
     imageSrcs: [COMBO_ECONOMICO_VERDE_70],
-    price: 16000,
+    price: 20000,
     description: `Los combos económicos incluyen:
 
 - 1 Tubo Shooter.
@@ -330,7 +473,7 @@ export const PRODUCTOS: Record<string, Item> = {
     category: "COMBOS",
     name: "Bong Combo Larry Grogui SHINY",
     imageSrcs: [COMBO_LARRY_GROGUI_SHINY_1, COMBO_LARRY_GROGUI_SHINY_2],
-    price: 45000,
+    price: 60000,
     description: `Los combos Shiny incluyen:
 
 - 1 Tubo.
@@ -348,7 +491,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
     category: "COMBOS",
     name: "Bong Combo Rockie Shooter SHINY",
     imageSrcs: [COMBO_ROCKIE_SHOOTER_SHINY_1, COMBO_ROCKIE_SHOOTER_SHINY_2],
-    price: 45000,
+    price: 30000,
     description: `Los combos Shiny incluyen:
 
 - 1 Tubo.
@@ -366,7 +509,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
     category: "COMBOS",
     name: "Bong Combo Rockie Dizzy SHINY",
     imageSrcs: [COMBO_ROCKIE_DIZZY_SHINY_1, COMBO_ROCKIE_DIZZY_SHINY_2],
-    price: 45000,
+    price: 56000,
     description: `Los combos Shiny incluyen:
 
 - 1 Tubo.
@@ -496,7 +639,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
     category: "TAPAS_63",
     name: "Tapa Rockie Naranja",
     imageSrcs: [TAPA63_ROCKIE_NARANJA],
-    price: 6800,
+    price: 7500,
     description: `Tapa para frasco de 63mm`,
     stock: 1,
   },
@@ -504,7 +647,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
     category: "TAPAS_63",
     name: "Tapa Rockie Roja",
     imageSrcs: [TAPA63_ROCKIE_ROJO],
-    price: 6800,
+    price: 7500,
     description: `Tapa para frasco de 63mm`,
     stock: 1,
   },
@@ -512,7 +655,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
     category: "TAPAS_63",
     name: "Tapa Rockie Rosa",
     imageSrcs: [TAPA63_ROCKIE_ROSA],
-    price: 6800,
+    price: 7500,
     description: `Tapa para frasco de 63mm`,
     stock: 1,
   },
@@ -520,7 +663,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
     category: "TAPAS_63",
     name: "Tapa Rockie Verde",
     imageSrcs: [TAPA63_ROCKIE_VERDE],
-    price: 6800,
+    price: 7500,
     description: `Tapa para frasco de 63mm`,
     stock: 1,
   },
@@ -580,7 +723,7 @@ Además, son tratados con resina epoxy para más resistencia, durabilidad y bril
     description: `Tubo quemador de vidrio.
 
 Lavable, Reutilizable.`,
-    stock: 1,
+    stock: 20,
   },
   TUBOS_DESCARTABLES_NARANJA: {
     category: "TUBOS_QUEMADORES",
