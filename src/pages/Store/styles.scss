@@ -1,4 +1,4 @@
-@import "src/globals.scss";
+@use "src/globals.scss" as *;
 
 .store {
   display: flex;

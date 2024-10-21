@@ -1,4 +1,4 @@
-@import "src/globals.scss";
+@use "src/globals.scss" as *;
 
 .header {
   display: flex;
@@ -90,17 +90,18 @@
   }
 
   &-mobile {
-    display: flex;
-    @include desktop {
-      display: none;
-    }
-
     align-items: center;
     gap: 8px;
     height: 46px;
     padding-left: 12px;
     padding-right: 12px;
     background-color: var(--color-primary-700);
+
+    display: flex;
+
+    @include desktop {
+      display: none;
+    }
 
     &-back-button {
       display: flex;

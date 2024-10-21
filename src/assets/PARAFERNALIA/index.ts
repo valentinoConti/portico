@@ -32,6 +32,8 @@ import IMG_9650 from "./resized/IMG_9650.webp";
 import IMG_9654 from "./resized/IMG_9654.webp";
 import IMG_9655 from "./resized/IMG_9655.webp";
 import IMG_9656 from "./resized/IMG_9656.webp";
+import IMG_9663 from "./resized/IMG_9663.webp";
+import IMG_9664 from "./resized/IMG_9664.webp";
 
 import CAZUELA_DIAMOND_AMARILLO from "./resized/CAZUELA_DIAMOND_AMARILLO.webp";
 import CAZUELA_DIAMOND_AZUL from "./resized/CAZUELA_DIAMOND_AZUL.webp";
@@ -168,6 +170,15 @@ export interface Item {
 
 // File generated from server.js
 export const PRODUCTOS: Record<string, Item> = {
+
+  PICADOR_NEGRO_Y_VERDE: {
+    name: "Picador Negro y Verde",
+    imageSrcs: [IMG_9663, IMG_9664],
+    price: 6500,
+    description: `Picador negro y verde`,
+    stock: 1,
+    category: "ACCESORIOS",
+  },
 
   PICADOR_NEGRO_Y_ROJO: {
     name: "Picador Negro y Rojo",
