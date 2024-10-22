@@ -34,6 +34,12 @@ import IMG_9655 from "./resized/IMG_9655.webp";
 import IMG_9656 from "./resized/IMG_9656.webp";
 import IMG_9663 from "./resized/IMG_9663.webp";
 import IMG_9664 from "./resized/IMG_9664.webp";
+import IMG_9720 from "./resized/IMG_9720.webp";
+import IMG_9721 from "./resized/IMG_9721.webp";
+import IMG_9722 from "./resized/IMG_9722.webp";
+import IMG_9723 from "./resized/IMG_9723.webp";
+import IMG_9724 from "./resized/IMG_9724.webp";
+import IMG_9725 from "./resized/IMG_9725.webp";
 
 import CAZUELA_DIAMOND_AMARILLO from "./resized/CAZUELA_DIAMOND_AMARILLO.webp";
 import CAZUELA_DIAMOND_AZUL from "./resized/CAZUELA_DIAMOND_AZUL.webp";
@@ -170,6 +176,35 @@ export interface Item {
 
 // File generated from server.js
 export const PRODUCTOS: Record<string, Item> = {
+
+  BATMAN: {
+    name: "Batman",
+    imageSrcs: [IMG_9724, IMG_9725],
+    price: 12000,
+    description: `Muñeco de Batman pintado a mano`,
+    stock: 1,
+    category: "DECORACION",
+  },
+
+  MAJIN_VEGETA: {
+    name: "Majin Vegeta",
+    imageSrcs: [IMG_9722, IMG_9723],
+    price: 22000,
+    description: `Muñeco de Majin Vegeta pintado a mano`,
+    stock: 1,
+    category: "DECORACION",
+  },
+
+  MILEI_MOTOSIERRA_GRANDE: {
+    name: "MILEI MOTOSIERRA GRANDE",
+    imageSrcs: [IMG_9720, IMG_9721],
+    price: 60000,
+    description: `Muñeco grande de Milei con La Motosierra pintado a mano
+
+VLLC!`,
+    stock: 1,
+    category: "DECORACION",
+  },
 
   PICADOR_NEGRO_Y_VERDE: {
     name: "Picador Negro y Verde",
@@ -1024,7 +1059,7 @@ Precio por el creeper grande: $8000`,
   },
   MILEI_MOTOSIERRA: {
     category: "DECORACION",
-    name: "MILEI MOTOSIERRA",
+    name: "MILEI MOTOSIERRA CHICO",
     imageSrcs: [
       DEC_MILEI_MOTOSIERRA_1,
       DEC_MILEI_MOTOSIERRA_2,
