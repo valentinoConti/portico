@@ -40,6 +40,15 @@ import IMG_9722 from "./resized/IMG_9722.webp";
 import IMG_9723 from "./resized/IMG_9723.webp";
 import IMG_9724 from "./resized/IMG_9724.webp";
 import IMG_9725 from "./resized/IMG_9725.webp";
+import IMG_9812 from "./resized/IMG_9812.webp";
+import IMG_9813 from "./resized/IMG_9813.webp";
+import IMG_9814 from "./resized/IMG_9814.webp";
+import IMG_9815 from "./resized/IMG_9815.webp";
+import IMG_9816 from "./resized/IMG_9816.webp";
+import IMG_9817 from "./resized/IMG_9817.webp";
+import IMG_9809 from "./resized/IMG_9809.webp";
+import IMG_9810 from "./resized/IMG_9810.webp";
+import IMG_9811 from "./resized/IMG_9811.webp";
 
 import CAZUELA_DIAMOND_AMARILLO from "./resized/CAZUELA_DIAMOND_AMARILLO.webp";
 import CAZUELA_DIAMOND_AZUL from "./resized/CAZUELA_DIAMOND_AZUL.webp";
@@ -177,31 +186,47 @@ export interface Item {
 // File generated from server.js
 export const PRODUCTOS: Record<string, Item> = {
 
+  MACETA_PARA_CACTUS_GRAVEDAD_INVERSA: {
+    name: "Maceta para Cactus Gravedad Inversa",
+    imageSrcs: [IMG_9809, IMG_9810, IMG_9811],
+    price: 10000,
+    description: `Maceta para cactus o plantas pequeñas`,
+    stock: 1,
+    category: "DECORACION",
+  },
+
+  MAJIN_VEGETA_MEDIANO: {
+    name: "Majin Vegeta mediano",
+    imageSrcs: [IMG_9815, IMG_9816, IMG_9817],
+    price: 20000,
+    description: `Muñeco de Majin Vegeta tamaño mediano pintado a mano`,
+    stock: 1,
+    category: "DECORACION",
+  },
+
+  BATMAN_MEDIANO: {
+    name: "Batman mediano",
+    imageSrcs: [IMG_9812, IMG_9813, IMG_9814],
+    price: 17500,
+    description: `Muñeco de Batman tamaño mediano pintado a mano`,
+    stock: 1,
+    category: "DECORACION",
+  },
+
   BATMAN: {
-    name: "Batman",
+    name: "Batman pequeño",
     imageSrcs: [IMG_9724, IMG_9725],
-    price: 12000,
-    description: `Muñeco de Batman pintado a mano`,
+    price: 10000,
+    description: `Muñeco de Batman tamaño pequeño pintado a mano`,
     stock: 1,
     category: "DECORACION",
   },
 
   MAJIN_VEGETA: {
-    name: "Majin Vegeta",
+    name: "Majin Vegeta pequeño",
     imageSrcs: [IMG_9722, IMG_9723],
-    price: 22000,
-    description: `Muñeco de Majin Vegeta pintado a mano`,
-    stock: 1,
-    category: "DECORACION",
-  },
-
-  MILEI_MOTOSIERRA_GRANDE: {
-    name: "MILEI MOTOSIERRA GRANDE",
-    imageSrcs: [IMG_9720, IMG_9721],
-    price: 60000,
-    description: `Muñeco grande de Milei con La Motosierra pintado a mano
-
-VLLC!`,
+    price: 14000,
+    description: `Muñeco de Majin Vegeta tamaño pequeño pintado a mano`,
     stock: 1,
     category: "DECORACION",
   },

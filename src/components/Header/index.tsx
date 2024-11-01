@@ -19,11 +19,19 @@ const Header = ({ showBackButton = false }: IHeaderProps) => {
 
   const shouldShowCart = location.pathname !== "/cart";
 
+  const goBack = () => {
+    if (window.history.state && window.history.state.idx > 0) {
+      navigate(-1);
+    } else {
+      navigate("/store");
+    }
+  };
+
   return (
     <>
       <header className="header">
         {showBackButton && (
-          <div className="header-back-button" onClick={() => navigate(-1)}>
+          <div className="header-back-button" onClick={goBack}>
             <ArrowLeftIcon height={22} width={22} />
             <span>Volver</span>
           </div>
@@ -45,10 +53,7 @@ const Header = ({ showBackButton = false }: IHeaderProps) => {
 
       <div className="header-mobile">
         {showBackButton && (
-          <div
-            className="header-mobile-back-button"
-            onClick={() => navigate(-1)}
-          >
+          <div className="header-mobile-back-button" onClick={goBack}>
             <ArrowLeftIcon height={22} width={22} />
             <span>Volver</span>
           </div>

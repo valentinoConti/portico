@@ -13,7 +13,7 @@ const Footer = () => {
           <a href="https://www.instagram.com/portico.club" target="_blank">
             <InstagramIcon />
           </a>
-          <a href="https://wa.me/5493624207170" target="_blank">
+          <a href="https://wa.me/5493624685080" target="_blank">
             <WhatsappIcon />
           </a>
         </div>
