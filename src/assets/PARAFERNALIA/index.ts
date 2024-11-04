@@ -49,6 +49,10 @@ import IMG_9817 from "./resized/IMG_9817.webp";
 import IMG_9809 from "./resized/IMG_9809.webp";
 import IMG_9810 from "./resized/IMG_9810.webp";
 import IMG_9811 from "./resized/IMG_9811.webp";
+import IMG_9884 from "./resized/IMG_9884.webp";
+import IMG_9885 from "./resized/IMG_9885.webp";
+import IMG_9886 from "./resized/IMG_9886.webp";
+import IMG_9887 from "./resized/IMG_9887.webp";
 
 import CAZUELA_DIAMOND_AMARILLO from "./resized/CAZUELA_DIAMOND_AMARILLO.webp";
 import CAZUELA_DIAMOND_AZUL from "./resized/CAZUELA_DIAMOND_AZUL.webp";
@@ -185,6 +189,15 @@ export interface Item {
 
 // File generated from server.js
 export const PRODUCTOS: Record<string, Item> = {
+
+  SPIDER_MAN_MEDIANO: {
+    name: "Spider Man mediano",
+    imageSrcs: [IMG_9884, IMG_9885, IMG_9886, IMG_9887],
+    price: 20000,
+    description: `Muñeco de SpiderMan tamaño mediano pintado a mano`,
+    stock: 1,
+    category: "DECORACION",
+  },
 
   MACETA_PARA_CACTUS_GRAVEDAD_INVERSA: {
     name: "Maceta para Cactus Gravedad Inversa",
