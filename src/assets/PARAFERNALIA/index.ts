@@ -34,8 +34,6 @@ import IMG_9655 from "./resized/IMG_9655.webp";
 import IMG_9656 from "./resized/IMG_9656.webp";
 import IMG_9663 from "./resized/IMG_9663.webp";
 import IMG_9664 from "./resized/IMG_9664.webp";
-import IMG_9720 from "./resized/IMG_9720.webp";
-import IMG_9721 from "./resized/IMG_9721.webp";
 import IMG_9722 from "./resized/IMG_9722.webp";
 import IMG_9723 from "./resized/IMG_9723.webp";
 import IMG_9724 from "./resized/IMG_9724.webp";
@@ -57,6 +55,19 @@ import IMG_9908 from "./resized/IMG_9908.webp";
 import IMG_9909 from "./resized/IMG_9909.webp";
 import IMG_9911 from "./resized/IMG_9911.webp";
 import IMG_9912 from "./resized/IMG_9912.webp";
+import IMG_0137 from "./resized/IMG_0137.webp";
+import IMG_0138 from "./resized/IMG_0138.webp";
+import IMG_0152 from "./resized/IMG_0152.webp";
+import IMG_0153 from "./resized/IMG_0153.webp";
+import IMG_0157 from "./resized/IMG_0157.webp";
+import IMG_0158 from "./resized/IMG_0158.webp";
+import BULLDOG_1 from "./resized/bulldog-1.webp";
+import BULLDOG_2 from "./resized/bulldog-2.webp";
+import WOLVERINE_1 from "./resized/wolverine-1.webp";
+import WOLVERINE_2 from "./resized/wolverine-2.webp";
+import WOLVERINE_3 from "./resized/wolverine-3.webp";
+import WOLVERINE_4 from "./resized/wolverine-4.webp";
+import WOLVERINE_5 from "./resized/wolverine-5.webp";
 
 import CAZUELA_DIAMOND_AMARILLO from "./resized/CAZUELA_DIAMOND_AMARILLO.webp";
 import CAZUELA_DIAMOND_AZUL from "./resized/CAZUELA_DIAMOND_AZUL.webp";
@@ -193,6 +204,44 @@ export interface Item {
 
 // File generated from server.js
 export const PRODUCTOS: Record<string, Item> = {
+  WOLVERINE_GRANDE: {
+    name: "Wolverine Grande",
+    imageSrcs: [
+      WOLVERINE_1,
+      WOLVERINE_2,
+      WOLVERINE_3,
+      WOLVERINE_4,
+      WOLVERINE_5,
+    ],
+    price: 30000,
+    description: `Figura de Wolverine pintada a mano con mucho detalle!
+
+Figura tamaño 16x11x21 cm`,
+    stock: 1,
+    category: "DECORACION",
+  },
+
+  BADASS_BULLDOG: {
+    name: "Badass Bulldog",
+    imageSrcs: [BULLDOG_1, BULLDOG_2],
+    price: 14000,
+    description: `Figura de un Bulldog full mafia pintada a detalle
+
+Figura tamaño 10x10x12 cm`,
+    stock: 1,
+    category: "DECORACION",
+  },
+
+  DEADPOOL: {
+    name: "Deadpool",
+    imageSrcs: [IMG_0137, IMG_0138, IMG_0152, IMG_0153, IMG_0157, IMG_0158],
+    price: 24000,
+    description: `Figura de Deadpool pintado a mano con mucho detalle!
+
+Figura tamaño 14x11x20 cm`,
+    stock: 1,
+    category: "DECORACION",
+  },
 
   MAJIN_VEGETA_MEDIANO_TOP: {
     name: "Majin Vegeta mediano top",
